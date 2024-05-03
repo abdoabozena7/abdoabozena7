@@ -1,5 +1,5 @@
-Welcome to Abdelrahman Mohamed's GitHub Profile! 🚀
-About Me:
+Welcome to my Profile! 🚀
+
 Hey there! I'm Abdelrahman Mohamed, a passionate enthusiast of deep learning, machine learning, AI, malware development, devops, web applications, Dart, and problem-solving.
 
 What I'm Up To
