@@ -61,18 +61,7 @@
   </svg>
 </p>
 
-<!-- ====== Minimal Projects (no stats, just bold badges) ====== -->
-<p align="center">
-  <a href="https://github.com/abdoabozena7/portfolio" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Live-0f172a?style=for-the-badge">
-  </a>
-  <a href="https://github.com/abdoabozena7/ui-micro-interactions" target="_blank">
-    <img src="https://img.shields.io/badge/UI%20Micro%20Interactions-Pack-7c3aed?style=for-the-badge">
-  </a>
-  <a href="https://github.com/abdoabozena7/components" target="_blank">
-    <img src="https://img.shields.io/badge/Components-Library-22c55e?style=for-the-badge">
-  </a>
-</p>
+
 
 <!-- ====== Color Wave Footer ====== -->
 ![footer](https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:00d4ff,50:ffd319,100:ff6a00)
