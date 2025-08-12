@@ -3,7 +3,7 @@
 
 <!-- ====== Dynamic Tagline (Typing) ====== -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&lines=Creative+Frontend+Developer;Micro-interactions+%26+Playful+UI;Clean+Code%2C+Bold+Colors%2C+Smooth+Motion" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&lines=ReactJS,NodeJS,nextJS;ThreeJS+%26+Python;Clean+Code%2C+Bold+Colors%2C+Smooth+Motion" alt="Typing SVG" />
 </p>
 
 <!-- ====== Animated Gradient Bar + Bouncing Dot (pure SVG) ====== -->
