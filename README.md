@@ -1,18 +1,33 @@
-Welcome to my Profile! 🚀
+<h1 align="center">Hi 👋, I'm Abdelrahman Mohamed</h1>
+<h3 align="center">A passionate developer from 🌍</h3>
 
-Hey there! I'm Abdelrahman Mohamed, a passionate enthusiast of deep learning, machine learning, AI, malware development, devops, web applications, Dart, and problem-solving.
+<!-- Typing effect -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?size=24&duration=3000&pause=800&center=true&vCenter=true&width=435&lines=Welcome+to+my+profile!;I+love+coding+%F0%9F%92%BB;Let's+build+something+amazing!" alt="Typing SVG" />
+</p>
 
-What I'm Up To:
+<!-- Fun gif -->
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding gif" />
+</p>
 
-🌱 Currently, I'm diving deep into the realms of ML, DL, and AI, honing my skills to stay at the forefront of innovation.
+<!-- GitHub Stats -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=abdoabozena7&show_icons=true&theme=tokyonight" alt="GitHub stats" />
+</p>
 
-🔭 I'm always on the lookout for exciting opportunities to collaborate on web applications. Let's build something amazing together!
+<!-- Top languages -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdoabozena7&layout=compact&theme=tokyonight" alt="Top languages" />
+</p>
 
-How to Reach Me
-📫 You can reach out to me at 01101489531. Don't hesitate to drop me a message; I'd love to connect with fellow enthusiasts and professionals.
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with-Love-red" />
+  <img src="https://img.shields.io/badge/Visitors-🌍-informational" />
+</p>
 
-Fun Fact
-⚡ Did you know that C++ isn't just for programming? It can also be used to train your "grook" documentation skills! Documentation matters, and I'm here to make it shine.
-
-Let's Connect!
-Feel free to explore my repositories, contribute to exciting projects, or just drop by to say hello. Looking forward to connecting with you!
+<!-- Activity graph -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abdoabozena7&theme=tokyo-night" alt="GitHub Activity Graph" />
+</p>
