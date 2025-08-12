@@ -35,10 +35,17 @@
 </p>
 
 <!-- ====== Vibrant Chips / Quick Links ====== -->
+<!-- ====== Social Links ====== -->
 <p align="center">
-  <a href="https://github.com/abdoabozena7" target="_blank"><img src="https://img.shields.io/badge/Follow-@abdoabozena7-111827?style=for-the-badge"></a>
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Contact-Me-ff6a00?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/your-link/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://wa.me/qr/L4NBPBFEZE2OL1" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  </a>
+  <a href="https://www.instagram.com/abdoabozena1?igsh=OWFjYmt4OXVhNmRv" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+  </a>
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
 </p>
 
 <!-- ====== Animated Headline (pure SVG, shifting gradient) ====== -->
