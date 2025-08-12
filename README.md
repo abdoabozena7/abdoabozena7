@@ -1,11 +1,6 @@
 <!-- ====== Animated Header (موج متحرك) ====== -->
 ![header](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6a00,100:ffd319&text=Abdelrahman%20Mohamed&fontColor=ffffff&fontSize=50&fontAlign=50&fontAlignY=35)
 
-<!-- ====== Hero GIF (بانر جذاب) ====== -->
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" width="90%" alt="Banner" />
-</p>
-
 <!-- ====== Short About ====== -->
 <p align="center">
   Passionate about crisp UI, smooth animations, and building delightful web experiences.
