@@ -48,4 +48,3 @@
 
 
 <!-- ====== Color Wave Footer ====== -->
-![footer](https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:00d4ff,50:ffd319,100:ff6a00)
