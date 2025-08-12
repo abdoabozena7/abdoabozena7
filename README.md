@@ -32,7 +32,6 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,figma,git,github" />
 </p>
 
-<!-- ====== Vibrant Chips / Quick Links ====== -->
 <!-- ====== Social Links ====== -->
 <p align="center">
   <a href="https://wa.me/qr/L4NBPBFEZE2OL1" target="_blank">
@@ -45,10 +44,6 @@
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
 </p>
-
-<!-- ====== Animated Headline (pure SVG, shifting gradient) ====== -->
-
-      <h1>I've Exceeded Expectations Even My Own </h1>
 
 
 
