@@ -2,7 +2,10 @@
 <svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abdelrahman Mohamed">
   <defs>
     <!-- خلفية دارك خفيفة مع نبض -->
-
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f1a"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
 
     <!-- شريط RGB يتحرك (بديل CSS gradient animation) -->
     <linearGradient id="rgb" x1="0%" y1="0%" x2="200%" y2="0%">
@@ -63,7 +66,6 @@
   <text x="50%" y="150" text-anchor="middle"
         font-family="Fira Code, Consolas, monospace"
         font-size="18" fill="#9fb0ff" opacity="0.9">
-      I've Exceeded Expectations Even My Own 
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+  I've Exceeded Expectations Even My Own     <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
   </text>
 </svg>
