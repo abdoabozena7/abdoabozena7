@@ -3,8 +3,8 @@
   <defs>
     <!-- خلفية دارك خفيفة مع نبض -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f1a"/>
-      <stop offset="100%" stop-color="#070a12"/>
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="100%" stop-color="#000"/>
     </linearGradient>
 
     <!-- شريط RGB يتحرك (بديل CSS gradient animation) -->
