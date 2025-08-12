@@ -2,7 +2,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6a00,50:ffd319,100:00d4ff&text=Abdelrahman%20Mohamed&fontColor=ffffff&fontSize=48&fontAlign=50&fontAlignY=35)
 
 <!-- ====== Dynamic Tagline (Typing) ====== -->
-<img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&color=FF5733&font=Fira+Code&lines=Code+Like+a+Rockstar;Inspired+by+Che+Guevara's+Rebel+Spirit;Debugging+Like+a+Therapist" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&color=FF5733&font=Fira+Code&lines=Code+Like+a+Rockstar;;Debugging+Like+a+TherapistInspired+by+Che+Guevara's+Rebel+Spirit" alt="Typing SVG" />
 <!-- ====== Animated Gradient Bar + Bouncing Dot (pure SVG) ====== -->
 <p align="center">
   <svg width="800" height="70" viewBox="0 0 800 70">
