@@ -1,10 +1,6 @@
 <!-- ====== Animated Wave Header ====== -->
 ![header](https://capsule-render.vercel.app/api?type=waving&height=200&color=0:ff6a00,100:ffd319&text=Abdelrahman%20Mohamed&fontColor=ffffff&fontSize=50&fontAlign=50&fontAlignY=35)
 
-<!-- ====== Typing Intro ====== -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?size=26&duration=2800&pause=900&center=true&vCenter=true&width=700&lines=Creative+Frontend+Developer;Minimalist+%26+Impactful+Design;Code+that+Feels+Alive+⚡" alt="Typing SVG" />
-</p>
 
 <!-- ====== Minimal Skills Icons ====== -->
 <p align="center">
