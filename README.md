@@ -2,37 +2,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:ff6a00,50:ffd319,100:00d4ff&text=Abdelrahman%20Mohamed&fontColor=ffffff&fontSize=48&fontAlign=50&fontAlignY=35)
 
 <!-- ====== Dynamic Tagline (Typing) ====== -->
-<p align="center">
-  <svg viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#ff6a00"/>
-        <stop offset="50%" stop-color="#ffd319"/>
-        <stop offset="100%" stop-color="#00d4ff"/>
-      </linearGradient>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-        text {
-          font-family: 'Poppins', sans-serif;
-          font-size: 26px;
-          fill: url(#grad);
-          animation: typing 4s steps(40, end) infinite alternate, blink .7s infinite;
-          white-space: nowrap;
-          overflow: hidden;
-        }
-        @keyframes typing {
-          from { clip-path: inset(0 100% 0 0); }
-          to { clip-path: inset(0 0 0 0); }
-        }
-        @keyframes blink {
-          50% { opacity: 0; }
-        }
-      </style>
-    </defs>
-    <text x="0" y="60">Code Like a Rockstar</text>
-  </svg>
-</p>
-
+<img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&color=FF5733&font=Fira+Code&lines=Code+Like+a+Rockstar;Inspired+by+Che+Guevara's+Rebel+Spirit;Debugging+Like+a+Code+Therapist" alt="Typing SVG" />
 <!-- ====== Animated Gradient Bar + Bouncing Dot (pure SVG) ====== -->
 <p align="center">
   <svg width="800" height="70" viewBox="0 0 800 70">
