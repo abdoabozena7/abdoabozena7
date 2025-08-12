@@ -56,8 +56,7 @@
     </defs>
     <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
           font-size="28" font-weight="700" fill="url(#gradText)">
-      Designing delightful, responsive interfaces.
-    </text>
+      I've Exceeded Expectations Even My Own    </text>
   </svg>
 </p>
 
