@@ -47,4 +47,4 @@
 
 
 
-<!-- ====== Color Wave Footer ====== -->
+![snake gif](https://github.com/abdoabozena7/abdoabozena7/blob/output/github-contribution-grid-snake.gif)
