@@ -3,7 +3,7 @@
   <img src="./neon-rgb.svg" alt="Abdelrahman Mohamed — RGB Neon" />
 </p>
 <!-- ====== Dynamic Tagline (Typing) ====== -->
-<img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&color=FF5733&font=Fira+Code&lines=Code+Like+a+Rockstar;Debugging+Like+a+Therapist;Inspired+by+Che+Guevara's+Rebel+Spirit" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&color=FF5733&font=Fira+Code&lines=Code+Like+a+Rockstar;Debugging+Like+a+Therapist(jk);Inspired+by+Che+Guevara's+Rebel+Spirit" alt="Typing SVG" />
 <!-- ====== Animated Gradient Bar + Bouncing Dot (pure SVG) ====== -->
 <p align="center">
   <svg width="800" height="70" viewBox="0 0 800 70">
