@@ -47,4 +47,4 @@
 
 
 
-![snake gif](https://github.com/abdoabozena7/abdoabozena7/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://raw.githubusercontent.com/abdoabozena7/abdoabozena7/output/snake-dark.svg)
