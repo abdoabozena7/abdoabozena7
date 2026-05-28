@@ -27,10 +27,7 @@
   </svg>
 </p>
 
-<!-- ====== Compact Skills Icons (colorful) ====== -->
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,figma,git,github" />
-</p>
+
 
 <!-- ====== Social Links ====== -->
 <p align="center">
