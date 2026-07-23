@@ -1,53 +1,98 @@
-<!-- ====== Color Wave Header ====== -->
+<!-- ====== RGB Neon Header ====== -->
 <p align="center">
-  <img src="./neon-rgb.svg" alt="Abdelrahman Mohamed — RGB Neon" />
-</p>
-<!-- ====== Dynamic Tagline (Typing) ====== -->
-<img src="https://readme-typing-svg.demolab.com?size=26&duration=2600&pause=700&center=true&vCenter=true&width=800&color=FFFFFF&font=Fira+Code&lines=Code+Like+a+Rockstar;Debugging+Like+a+Therapist(jk);Inspired+by+Che+Guevara's+Rebel+Spirit" alt="Typing SVG" />
-<!-- ====== Animated Gradient Bar + Bouncing Dot (pure SVG) ====== -->
-<p align="center">
-  <svg width="800" height="70" viewBox="0 0 800 70">
-    <defs>
-      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#ff6a00">
-          <animate attributeName="stop-color" values="#ff6a00;#ffd319;#00d4ff;#ff6a00" dur="8s" repeatCount="indefinite"/>
-        </stop>
-        <stop offset="100%" stop-color="#ffd319">
-          <animate attributeName="stop-color" values="#ffd319;#00d4ff;#ff6a00;#ffd319" dur="8s" repeatCount="indefinite"/>
-        </stop>
-      </linearGradient>
-    </defs>
-    <rect x="0" y="30" width="800" height="10" rx="5" fill="url(#grad1)">
-      <animate attributeName="y" values="15;30;15" dur="5s" repeatCount="indefinite"/>
-    </rect>
-    <circle r="6" fill="#ffffff">
-      <animate attributeName="cx" values="0;800;0" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="35;20;35" dur="6s" repeatCount="indefinite"/>
-    </circle>
-  </svg>
+  <img
+    src="./neon-rgb.svg"
+    alt="Abdelrahman Mohamed — RGB Neon"
+    width="100%"
+  />
 </p>
 
+<!-- ====== Terminal ASCII Profile ====== -->
+<div align="center">
+<pre>
+┌──────────────────────────────────────────┬────────────────────────────────────────────────────┐
+│ ASCII PORTRAIT                           │ PROFILE                                            │
+├──────────────────────────────────────────┼────────────────────────────────────────────────────┤
+│                    :                     │ ABDELRAHMAN MOHAMED                                │
+│             :+++++*%%##%#++=             │ @abdoabozena7                                      │
+│          =**%@@@@@@@@@@@@@@@%=-          │                                                    │
+│         *%@@@@@@@@@@@@@@@@@@@@%*:        │ ROLE       Software Developer                      │
+│        :%@@@@@@@@@@@@@@@@@@@@@@@%-       │ FOCUS      AI Agents &amp; Local LLMs                  │
+│        -@@@@@@@@%%*#%%@@%%@@@@@@@-       │ PROJECT    GA3BAD Coding Agent                     │
+│        -@@@@@@%#*+-=+*#@@%@@%%@@#        │ SYSTEM     Multi-Agent Orchestration               │
+│         :%@@@#+#%%@@%#%@@@@@%+#@-        │ MEMORY     Hierarchical / Persistent               │
+│           *@#+#@@@@@#:+@@@@@@*=%*-       │                                                    │
+│          -*#*===+**+=-+#%%@@@*+%@*       │ MOTTO      Code Like a Rockstar                    │
+│          =#%#+++==--#%@@@#%%@%#%@=       │ DEBUGGING  Like a Therapist (jk)                   │
+│           -***#*****#@@@@@@%%%#%*        │ SPIRIT     Build. Break. Rebuild.                  │
+│            :=+###%@@@@@@@@@%%%*          │                                                    │
+│               *%%%%%%@@@@@@%%%           │ PORTFOLIO  Clean Portfolio                         │
+│               +#@@@@@@@@@@@@@*           │ LINKEDIN   abdelrahman-abozena                     │
+│         -=: :-+*#@@@@@@@@@@@@+           │ INSTAGRAM  @abdoabozena1                           │
+│ -=+**#%@@@#+++**#%@@@@@@@@@@@#+-         │ WHATSAPP   Available                               │
+│ @@@@@@@@@@@@###%%@@@@@@@@@@@@@@@@#*=:    │                                                    │
+│ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*+ │ $ status: building something ambitious...          │
+└──────────────────────────────────────────┴────────────────────────────────────────────────────┘
+</pre>
+</div>
 
+<!-- ====== Dynamic Typing Tagline ====== -->
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2600&pause=700&color=FFFFFF&center=true&vCenter=true&width=850&lines=Code+Like+a+Rockstar;Debugging+Like+a+Therapist+%28jk%29;Building+AI+Agents+with+Local+LLMs;Inspired+by+Che+Guevara%27s+Rebel+Spirit"
+    alt="Typing animation"
+  />
+</p>
+
+<br>
+
+<!-- ====== Terminal Command ====== -->
+<div align="center">
+<pre>
+abdoabozena7@github:~$ connect --with-me
+</pre>
+</div>
 
 <!-- ====== Social Links ====== -->
 <p align="center">
-  <a href="https://wa.me/qr/L4NBPBFEZE2OL1" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+
+  <a href="https://wa.me/qr/L4NBPBFEZE2OL1">
+    <img
+      src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
+      alt="WhatsApp"
+    />
   </a>
 
-  <a href="https://www.instagram.com/abdoabozena1?igsh=OWFjYmt4OXVhNmRv" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+  <a href="https://www.instagram.com/abdoabozena1?igsh=OWFjYmt4OXVhNmRv">
+    <img
+      src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+      alt="Instagram"
+    />
   </a>
 
-  <a href="https://www.linkedin.com/in/abdelrahman-abozena" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+  <a href="https://www.linkedin.com/in/abdelrahman-abozena">
+    <img
+      src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+      alt="LinkedIn"
+    />
   </a>
 
-  <a href="https://abdoabozena7.github.io/Clean_Portofoio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white">
+  <a href="https://abdoabozena7.github.io/Clean_Portofoio/">
+    <img
+      src="https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white"
+      alt="Portfolio"
+    />
   </a>
+
 </p>
 
+<br>
 
-
-![snake gif](https://raw.githubusercontent.com/abdoabozena7/abdoabozena7/output/snake-dark.svg)
+<!-- ====== Contribution Snake ====== -->
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/abdoabozena7/abdoabozena7/output/snake-dark.svg"
+    alt="GitHub contribution snake"
+    width="100%"
+  />
+</p>
