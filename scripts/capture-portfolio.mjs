@@ -12,8 +12,8 @@ const PORTFOLIO_URL =
 const OUTPUT_DIR = path.join(PROFILE_ROOT, "assets", "portfolio-preview");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "portfolio-preview.webp");
 const VIEWPORT = { width: 1280, height: 800 };
-const POSTER_LEAD_SECONDS = 1;
-const HERO_POSTER_SECONDS = 5;
+const VIDEO_LEAD_SECONDS = 0.25;
+const HERO_INTRO_HOLD_MS = 5_500;
 const MODEL_SETTLE_MS = 15_000;
 const SHOWCASE_SETTLE_MS = 2_500;
 const HERO_SETTLE_MS = 5_000;
@@ -238,7 +238,7 @@ async function replaceAtomically(source, destination) {
   }
 }
 
-async function encodeWebP(videoPath, posterPath, trimStartSeconds, stagingDir) {
+async function encodeWebP(videoPath, trimStartSeconds, stagingDir) {
   const attempts = [
     { width: 1024, fps: 10, quality: 68 },
     { width: 896, fps: 8, quality: 60 },
@@ -251,16 +251,12 @@ async function encodeWebP(videoPath, posterPath, trimStartSeconds, stagingDir) {
       "-hide_banner",
       "-loglevel",
       "error",
-      "-loop",
-      "1",
-      "-i",
-      posterPath,
       "-ss",
       String(trimStartSeconds),
       "-i",
       videoPath,
       "-filter_complex",
-      `[0:v]scale=${attempt.width}:-2:flags=lanczos,setsar=1,trim=duration=${HERO_POSTER_SECONDS},setpts=PTS-STARTPTS[poster];[1:v]fps=${attempt.fps},scale=${attempt.width}:-2:flags=lanczos,setsar=1,setpts=PTS-STARTPTS[recording];[poster][recording]concat=n=2:v=1:a=0,fps=${attempt.fps},format=yuv420p[v]`,
+      `[0:v]fps=${attempt.fps},scale=${attempt.width}:-2:flags=lanczos,setsar=1,setpts=PTS-STARTPTS,format=yuv420p[v]`,
       "-map",
       "[v]",
       "-an",
@@ -403,24 +399,18 @@ async function main() {
     }
     await setScrollTop(page, 0);
     await sleep(HERO_SETTLE_MS);
-    const posterPath = path.join(stagingDir, "hero-poster.png");
-    await page.screenshot({
-      path: posterPath,
-      type: "png",
-      animations: "allow",
-      timeout: SCREENSHOT_TIMEOUT_MS,
-    });
     const trimStartSeconds = Math.max(
       0,
-      Number(((Date.now() - recordingStartedAt) / 1_000 - POSTER_LEAD_SECONDS).toFixed(2)),
+      Number(((Date.now() - recordingStartedAt) / 1_000 - VIDEO_LEAD_SECONDS).toFixed(2)),
     );
 
     const sequence = [
-      { progress: 0.24, duration: 4_200, hold: 1_800, pointer: [0.62, 0.42] },
-      { progress: 0.52, duration: 5_200, hold: 2_200, pointer: [0.34, 0.58] },
-      { progress: 0.75, duration: 5_200, hold: 2_400, pointer: [0.68, 0.34] },
-      { progress: 1.00, duration: 6_500, hold: 5_000, pointer: [0.52, 0.36] },
-      { progress: 0.00, duration: 7_500, hold: 0, pointer: [0.28, 0.46] },
+      { progress: 0.00, duration: 0, hold: HERO_INTRO_HOLD_MS, pointer: [0.28, 0.46] },
+      { progress: 0.24, duration: 7_000, hold: 2_500, pointer: [0.62, 0.42] },
+      { progress: 0.52, duration: 8_500, hold: 2_800, pointer: [0.34, 0.58] },
+      { progress: 0.75, duration: 8_500, hold: 3_000, pointer: [0.68, 0.34] },
+      { progress: 1.00, duration: 10_000, hold: 5_000, pointer: [0.52, 0.36] },
+      { progress: 0.00, duration: 11_000, hold: 0, pointer: [0.28, 0.46], settle: HERO_SETTLE_MS },
     ];
     let currentScroll = 0;
     const captureStartedAt = Date.now();
@@ -432,14 +422,18 @@ async function main() {
         { steps: 2 },
       );
       const targetScroll = Math.round(scrollLayer.maxScroll * moment.progress);
-      await animateScroll(page, targetScroll, moment.duration);
+      if (moment.duration > 0) {
+        await animateScroll(page, targetScroll, moment.duration);
+      } else {
+        await setScrollTop(page, targetScroll);
+      }
       if (moment.progress === 1) {
         await setScrollTop(page, targetScroll);
         await sleep(500);
       }
-      if (moment.progress === 0) {
+      if (moment.settle) {
         await setScrollTop(page, targetScroll);
-        await sleep(HERO_SETTLE_MS);
+        await sleep(moment.settle);
       }
       await sleep(moment.hold);
       currentScroll = targetScroll;
@@ -459,7 +453,7 @@ async function main() {
       throw new Error(`Browser recording is unexpectedly small (${videoSize} bytes).`);
     }
 
-    const encoded = await encodeWebP(videoPath, posterPath, trimStartSeconds, stagingDir);
+    const encoded = await encodeWebP(videoPath, trimStartSeconds, stagingDir);
     await fs.mkdir(OUTPUT_DIR, { recursive: true });
     await replaceAtomically(encoded.candidate, OUTPUT_FILE);
 
