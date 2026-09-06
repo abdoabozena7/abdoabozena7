@@ -17,6 +17,7 @@ const HERO_POSTER_SECONDS = 1.2;
 const MODEL_SETTLE_MS = 15_000;
 const SHOWCASE_SETTLE_MS = 2_500;
 const HERO_SETTLE_MS = 3_000;
+const SCREENSHOT_TIMEOUT_MS = 60_000;
 const MODEL_ASSETS = [
   "dalithe_persistence_of_memory.glb",
   "wanderer_above_the_sea_of_fog.glb",
@@ -384,7 +385,12 @@ async function main() {
     await setScrollTop(page, scrollLayer.maxScroll);
     await sleep(SHOWCASE_SETTLE_MS);
     const showcaseCheckPath = path.join(stagingDir, "showcase-check.png");
-    await page.screenshot({ path: showcaseCheckPath, type: "png", animations: "allow" });
+    await page.screenshot({
+      path: showcaseCheckPath,
+      type: "png",
+      animations: "allow",
+      timeout: SCREENSHOT_TIMEOUT_MS,
+    });
     const showcaseScreenshotBytes = (await fs.stat(showcaseCheckPath)).size;
     if (showcaseScreenshotBytes < MIN_SHOWCASE_SCREENSHOT_BYTES) {
       throw new Error(
@@ -394,7 +400,12 @@ async function main() {
     await setScrollTop(page, 0);
     await sleep(HERO_SETTLE_MS);
     const posterPath = path.join(stagingDir, "hero-poster.png");
-    await page.screenshot({ path: posterPath, type: "png", animations: "allow" });
+    await page.screenshot({
+      path: posterPath,
+      type: "png",
+      animations: "allow",
+      timeout: SCREENSHOT_TIMEOUT_MS,
+    });
     const trimStartSeconds = Math.max(
       0,
       Number(((Date.now() - recordingStartedAt) / 1_000 - POSTER_LEAD_SECONDS).toFixed(2)),
