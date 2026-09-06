@@ -71,7 +71,7 @@
     </g>
 
     <g id="welcome-to-my-work" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.07539;0.08594;1" calcMode="discrete"/>
+      <animate  attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.07539;0.08632;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
 
@@ -152,7 +152,7 @@
     </g>
 
     <g id="ai-engineer" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.17226;0.19902;1" calcMode="discrete"/>
+      <animate  attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.17226;0.2058;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
 
@@ -165,7 +165,7 @@
     </g>
 
     <g id="full-role" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.2058;0.23671;1" calcMode="discrete"/>
+      <animate  attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.2058;0.24425;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
 
@@ -230,7 +230,7 @@
     </g>
 
     <g id="agents-reason" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.29212;0.33547;1" calcMode="discrete"/>
+      <animate  attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.29212;0.34225;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
 
@@ -270,7 +270,7 @@
     </g>
 
     <g id="orchestration" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.39389;0.43649;1" calcMode="discrete"/>
+      <animate  attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.39389;0.44327;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
 
@@ -439,7 +439,7 @@
     </g>
 
     <g id="ollama" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.6389;0.65473;1" calcMode="discrete"/>
+      <animate  attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.6389;0.65511;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
 
