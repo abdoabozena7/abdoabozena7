@@ -6,31 +6,30 @@
         dominant-baseline: middle;
         text-anchor: middle;
         font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
-        text-rendering: geometricPrecision;
+        text-rendering: optimizeSpeed;
         paint-order: stroke;
         stroke-linejoin: round;
-        stroke-width: 1.35px;
-        stroke-opacity: 0.72;
-        filter: drop-shadow(0 0 1.4px rgba(0, 0, 0, 0.48)) drop-shadow(0 0 1.2px rgba(255, 255, 255, 0.28));
+        stroke-width: 1.7px;
+        stroke-opacity: 0.84;
       }
     </style>
   </defs>
 
     <g id="hey" opacity="1">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="1;1;1;0;0" keyTimes="0;0.0017;0.04354;0.04523;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="1;0;0" keyTimes="0;0.04523;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.0017;0.04354;0.04523;1" calcMode="linear"/>
+
           <g>
           <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.35 1.35;1 1;1 1;1 1;1 1" keyTimes="0;0.0017;0.04354;0.04523;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="126" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Hey</text>
+      <text x="0" y="0" font-size="126" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Hey</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="welcome" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.04523;0.04693;0.05371;0.05541;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.04523;0.05541;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="-80 0;-80 0;0 0;0 0;0 0;-80 0" keyTimes="0;0.04523;0.04693;0.05371;0.05541;1" calcMode="linear"/>
@@ -43,39 +42,39 @@
     </g>
 
     <g id="welcome-to" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.05541;0.05711;0.06389;0.06559;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.05541;0.06559;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.05541;0.05711;0.06389;0.06559;1" calcMode="linear"/>
+
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.05541;0.05711;0.06389;0.06559;1" calcMode="linear"/>
+
       <text x="-170" y="0" font-size="72" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
-      <text x="120" y="0" font-size="82" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">To</text>
+      <text x="120" y="0" font-size="82" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">To</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="welcome-to-my" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.06559;0.06728;0.07369;0.07539;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.06559;0.07539;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.06559;0.06728;0.07369;0.07539;1" calcMode="linear"/>
+
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.06559;0.06728;0.07369;0.07539;1" calcMode="linear"/>
+
       <text x="-245" y="0" font-size="63" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
       <text x="-60" y="0" font-size="70" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">To</text>
-      <text x="120" y="0" font-size="78" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">My</text>
+      <text x="120" y="0" font-size="78" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">My</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="welcome-to-my-work" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.07539;0.07708;0.08424;0.08594;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.07539;0.08594;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.07539;0.07708;0.08424;0.08594;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.8 0.8;0.8 0.8;1 1;1 1;1 1;0.8 0.8" keyTimes="0;0.07539;0.07708;0.08424;0.08594;1" calcMode="linear"/>
       <text x="-270" y="0" font-size="58" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
@@ -88,23 +87,23 @@
     </g>
 
     <g id="im" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.08632;0.08801;0.1144;0.11609;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.08632;0.11609;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.08632;0.08801;0.1144;0.11609;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.3 2.3;2.3 2.3;1 1;1 1;1 1;2.3 2.3" keyTimes="0;0.08632;0.08801;0.1144;0.11609;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">I'm</text>
+      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">I'm</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="abdelrahman" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.11609;0.11779;0.14116;0.14286;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.11609;0.14286;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.11609;0.11779;0.14116;0.14286;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="5.6 5.6;5.6 5.6;1 1;1 1;0.82 0.82;5.6 5.6" keyTimes="0;0.11609;0.11779;0.14116;0.14286;1" calcMode="linear"/>
       <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="-2px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">ABDELRAHMAN</text>
@@ -114,10 +113,10 @@
     </g>
 
     <g id="an" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.14286;0.14455;0.15096;0.15266;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.14286;0.15266;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.14286;0.14455;0.15096;0.15266;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.14286;0.14455;0.15096;0.15266;1" calcMode="linear"/>
       <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">An</text>
@@ -127,23 +126,23 @@
     </g>
 
     <g id="agentic" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.15266;0.15435;0.16076;0.16246;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.15266;0.16246;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="-170 0;-170 0;0 0;0 0;0 0;-170 0" keyTimes="0;0.15266;0.15435;0.16076;0.16246;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.15266;0.15435;0.16076;0.16246;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="102" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agentic</text>
+
+      <text x="0" y="0" font-size="102" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Agentic</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="ai" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.16246;0.16415;0.17056;0.17226;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.16246;0.17226;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.16246;0.16415;0.17056;0.17226;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.8 2.8;2.8 2.8;1 1;1 1;1 1;2.8 2.8" keyTimes="0;0.16246;0.16415;0.17056;0.17226;1" calcMode="linear"/>
       <text x="0" y="0" font-size="124" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">AI</text>
@@ -153,10 +152,10 @@
     </g>
 
     <g id="ai-engineer" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.17226;0.17395;0.19732;0.19902;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.17226;0.19902;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.17226;0.17395;0.19732;0.19902;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.75 0.75;0.75 0.75;1 1;1 1;1 1;0.75 0.75" keyTimes="0;0.17226;0.17395;0.19732;0.19902;1" calcMode="linear"/>
       <text x="0" y="0" font-size="82" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F88A08" class="kinetic-text">AI Engineer</text>
@@ -166,36 +165,36 @@
     </g>
 
     <g id="full-role" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.2058;0.2075;0.23502;0.23671;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.2058;0.23671;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.2058;0.2075;0.23502;0.23671;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.2058;0.2075;0.23502;0.23671;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="70" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agentic AI Engineer</text>
+      <text x="0" y="0" font-size="70" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Agentic AI Engineer</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="i" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.24425;0.24595;0.25085;0.25254;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.24425;0.25254;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.24425;0.24595;0.25085;0.25254;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.2 2.2;2.2 2.2;1 1;1 1;1 1;2.2 2.2" keyTimes="0;0.24425;0.24595;0.25085;0.25254;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="128" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">I</text>
+      <text x="0" y="0" font-size="128" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">I</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="heart" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.25254;0.25424;0.26027;0.26197;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.25254;0.26197;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.25254;0.25424;0.26027;0.26197;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.6 2.6;2.6 2.6;1 1;1 1;1 1;2.6 2.6" keyTimes="0;0.25254;0.25424;0.26027;0.26197;1" calcMode="linear"/>
       <text x="0" y="0" font-size="110" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">❤</text>
@@ -205,23 +204,23 @@
     </g>
 
     <g id="building" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.26197;0.26366;0.27459;0.27629;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.26197;0.27629;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="160 0;160 0;0 0;0 0;0 0;160 0" keyTimes="0;0.26197;0.26366;0.27459;0.27629;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.26197;0.26366;0.27459;0.27629;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="90" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">building</text>
+
+      <text x="0" y="0" font-size="90" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">building</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="agents" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.27629;0.27799;0.29043;0.29212;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.27629;0.29212;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.27629;0.27799;0.29043;0.29212;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.6 1.6;1.6 1.6;1 1;1 1;1 1;1.6 1.6" keyTimes="0;0.27629;0.27799;0.29043;0.29212;1" calcMode="linear"/>
       <text x="0" y="0" font-size="108" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">Agents</text>
@@ -231,12 +230,12 @@
     </g>
 
     <g id="agents-reason" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.29212;0.29382;0.33377;0.33547;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.29212;0.33547;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.29212;0.29382;0.33377;0.33547;1" calcMode="linear"/>
+
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.29212;0.29382;0.33377;0.33547;1" calcMode="linear"/>
+
       <text x="-190" y="0" font-size="69" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Agents that</text>
       <text x="190" y="0" font-size="90" font-weight="900" letter-spacing="1px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">reason</text>
           </g>
@@ -245,12 +244,12 @@
     </g>
 
     <g id="through" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.34225;0.34395;0.3545;0.3562;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.34225;0.3562;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="200 0;200 0;0 0;0 0;0 0;200 0" keyTimes="0;0.34225;0.34395;0.3545;0.3562;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.34225;0.34395;0.3545;0.3562;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="88" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Through</text>
           </g>
         </g>
@@ -258,23 +257,23 @@
     </g>
 
     <g id="multi-agent" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.3562;0.3579;0.3922;0.39389;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.3562;0.39389;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.3562;0.3579;0.3922;0.39389;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.8 0.8;0.8 0.8;1 1;1 1;1 1;0.8 0.8" keyTimes="0;0.3562;0.3579;0.3922;0.39389;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="69" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Multi-Agent Systems</text>
+      <text x="0" y="0" font-size="69" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Multi-Agent Systems</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="orchestration" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.39389;0.39559;0.43479;0.43649;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.39389;0.43649;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.39389;0.39559;0.43479;0.43649;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;4.6 1;4.6 1;4.6 1;1 1" keyTimes="0;0.39389;0.39559;0.43479;0.43649;1" calcMode="linear"/>
       <text x="0" y="0" font-size="96" font-weight="900" letter-spacing="-3px" fill="#000000" stroke="#F9B709" class="kinetic-text">orchestration</text>
@@ -284,25 +283,25 @@
     </g>
 
     <g id="local-first" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.44327;0.44497;0.46947;0.47116;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.44327;0.47116;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.44327;0.44497;0.46947;0.47116;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.45 1.45;1.45 1.45;1 1;1 1;1 1;1.45 1.45" keyTimes="0;0.44327;0.44497;0.46947;0.47116;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Local-First</text>
+      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Local-First</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="and" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.47116;0.47286;0.48078;0.48247;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.47116;0.48247;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.47116;0.47286;0.48078;0.48247;1" calcMode="linear"/>
+
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.47116;0.47286;0.48078;0.48247;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="64" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">and</text>
           </g>
         </g>
@@ -310,10 +309,10 @@
     </g>
 
     <g id="evidence-driven" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.48247;0.48417;0.50905;0.51074;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.48247;0.51074;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.48247;0.48417;0.50905;0.51074;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.75 0.75;0.75 0.75;1 1;1 1;1 1;0.75 0.75" keyTimes="0;0.48247;0.48417;0.50905;0.51074;1" calcMode="linear"/>
       <text x="0" y="0" font-size="76" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F88A08" class="kinetic-text">Evidence-Driven</text>
@@ -323,23 +322,23 @@
     </g>
 
     <g id="agents-2" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.51074;0.51244;0.53166;0.53336;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.51074;0.53336;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="-180 0;-180 0;0 0;0 0;0 0;-180 0" keyTimes="0;0.51074;0.51244;0.53166;0.53336;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.51074;0.51244;0.53166;0.53336;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agents</text>
+
+      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Agents</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="scale" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.53336;0.53505;0.54109;0.54278;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.53336;0.54278;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.53336;0.53505;0.54109;0.54278;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.4 2.4;2.4 2.4;1 1;1 1;1 1;2.4 2.4" keyTimes="0;0.53336;0.53505;0.54109;0.54278;1" calcMode="linear"/>
       <text x="0" y="0" font-size="106" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">Scale</text>
@@ -349,12 +348,12 @@
     </g>
 
     <g id="your" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.54278;0.54448;0.55239;0.55409;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.54278;0.55409;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="160 0;160 0;0 0;0 0;0 0;160 0" keyTimes="0;0.54278;0.54448;0.55239;0.55409;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.54278;0.54448;0.55239;0.55409;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="72" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">your</text>
           </g>
         </g>
@@ -362,23 +361,23 @@
     </g>
 
     <g id="systems" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.55409;0.55579;0.56672;0.56841;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.55409;0.56841;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.55409;0.55579;0.56672;0.56841;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.65 0.65;0.65 0.65;1 1;1 1;1 1;0.65 0.65" keyTimes="0;0.55409;0.55579;0.56672;0.56841;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="108" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">systems</text>
+      <text x="0" y="0" font-size="108" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">systems</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="dont" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.56841;0.57011;0.58179;0.58349;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.56841;0.58349;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.56841;0.57011;0.58179;0.58349;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.2 2.2;2.2 2.2;1 1;1 1;1 1;2.2 2.2" keyTimes="0;0.56841;0.57011;0.58179;0.58349;1" calcMode="linear"/>
       <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">Don't</text>
@@ -388,25 +387,25 @@
     </g>
 
     <g id="blink" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.58349;0.59932;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.7 1;0.7 1;1 1;1 1;1 1;0.7 1" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="-7px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Blink<animate attributeName="letter-spacing" dur="53.06s" repeatCount="indefinite" values="-7px;-7px;30px;30px;30px;-7px" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/></text>
+      <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="-7px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Blink<animate attributeName="letter-spacing" dur="53.06s" repeatCount="indefinite" values="-7px;-7px;30px;30px;30px;-7px" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/></text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="python" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.59932;0.60102;0.61082;0.61251;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.59932;0.61251;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="-160 0;-160 0;0 0;0 0;0 0;-160 0" keyTimes="0;0.59932;0.60102;0.61082;0.61251;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.59932;0.60102;0.61082;0.61251;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">Python</text>
           </g>
         </g>
@@ -414,23 +413,23 @@
     </g>
 
     <g id="fastapi" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.61251;0.61421;0.62401;0.62571;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.61251;0.62571;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="170 0;170 0;0 0;0 0;0 0;170 0" keyTimes="0;0.61251;0.61421;0.62401;0.62571;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.61251;0.61421;0.62401;0.62571;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">FastAPI</text>
+
+      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">FastAPI</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="kafka" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.62571;0.6274;0.6372;0.6389;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.62571;0.6389;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.62571;0.6274;0.6372;0.6389;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.8 1.8;1.8 1.8;1 1;1 1;1 1;1.8 1.8" keyTimes="0;0.62571;0.6274;0.6372;0.6389;1" calcMode="linear"/>
       <text x="0" y="0" font-size="94" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">Kafka</text>
@@ -440,23 +439,23 @@
     </g>
 
     <g id="ollama" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.6389;0.6406;0.65303;0.65473;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.6389;0.65473;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.6389;0.6406;0.65303;0.65473;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.7 0.7;0.7 0.7;1 1;1 1;1 1;0.7 0.7" keyTimes="0;0.6389;0.6406;0.65303;0.65473;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="94" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Ollama</text>
+      <text x="0" y="0" font-size="94" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Ollama</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="build" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.65511;0.6568;0.66924;0.67094;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.65511;0.67094;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.65511;0.6568;0.66924;0.67094;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.2 2.2;2.2 2.2;1 1;1 1;1 1;2.2 2.2" keyTimes="0;0.65511;0.6568;0.66924;0.67094;1" calcMode="linear"/>
       <text x="0" y="0" font-size="114" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">Build</text>
@@ -466,12 +465,12 @@
     </g>
 
     <g id="bigger" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.67094;0.67263;0.68432;0.68602;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.67094;0.68602;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="-180 0;-180 0;0 0;0 0;0 0;-180 0" keyTimes="0;0.67094;0.67263;0.68432;0.68602;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.67094;0.67263;0.68432;0.68602;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="100" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">bigger</text>
           </g>
         </g>
@@ -479,10 +478,10 @@
     </g>
 
     <g id="rag" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.68602;0.68771;0.70128;0.70298;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.68602;0.70298;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.68602;0.68771;0.70128;0.70298;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.6 0.6;0.6 0.6;1 1;1 1;1 1;0.6 0.6" keyTimes="0;0.68602;0.68771;0.70128;0.70298;1" calcMode="linear"/>
       <text x="0" y="0" font-size="126" font-weight="900" letter-spacing="2px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">RAG</text>
@@ -492,12 +491,12 @@
     </g>
 
     <g id="and-2" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.70298;0.70467;0.71259;0.71429;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.70298;0.71429;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.70298;0.70467;0.71259;0.71429;1" calcMode="linear"/>
+
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.70298;0.70467;0.71259;0.71429;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="64" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">and</text>
           </g>
         </g>
@@ -505,25 +504,25 @@
     </g>
 
     <g id="agents-3" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.71429;0.71598;0.72767;0.72936;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.71429;0.72936;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.71429;0.71598;0.72767;0.72936;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.71429;0.71598;0.72767;0.72936;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="106" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agents</text>
+      <text x="0" y="0" font-size="106" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Agents</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="stop-guessing" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.72936;0.73106;0.74651;0.74821;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.72936;0.74821;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="180 0;180 0;0 0;0 0;0 0;180 0" keyTimes="0;0.72936;0.73106;0.74651;0.74821;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.72936;0.73106;0.74651;0.74821;1" calcMode="linear"/>
+
       <text x="0" y="0" font-size="82" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">stop guessing</text>
           </g>
         </g>
@@ -531,13 +530,13 @@
     </g>
 
     <g id="start-shipping" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.74821;0.74991;0.7729;0.77459;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.74821;0.77459;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.74821;0.74991;0.7729;0.77459;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.8 1.8;1.8 1.8;1 1;1 1;1 1;1.8 1.8" keyTimes="0;0.74821;0.74991;0.7729;0.77459;1" calcMode="linear"/>
-      <text x="-190" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">start</text>
+      <text x="-190" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">start</text>
       <text x="190" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">shipping</text>
           </g>
         </g>
@@ -545,10 +544,10 @@
     </g>
 
     <g id="real-systems" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.77459;0.77629;0.80305;0.80475;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.77459;0.80475;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.77459;0.77629;0.80305;0.80475;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.7 0.7;0.7 0.7;1 1;1 1;1 1;0.7 0.7" keyTimes="0;0.77459;0.77629;0.80305;0.80475;1" calcMode="linear"/>
       <text x="0" y="0" font-size="103" font-weight="900" letter-spacing="-1px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">real systems</text>
@@ -558,23 +557,23 @@
     </g>
 
     <g id="question" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.80475;0.80645;0.81964;0.82133;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.80475;0.82133;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.80475;0.80645;0.81964;0.82133;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="4.5 4.5;4.5 4.5;1 1;1 1;1 1;4.5 4.5" keyTimes="0;0.80475;0.80645;0.81964;0.82133;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="142" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">?</text>
+      <text x="0" y="0" font-size="142" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">?</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="start-now" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.82133;0.82303;0.84828;0.84998;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.82133;0.84998;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.82133;0.82303;0.84828;0.84998;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.82133;0.82303;0.84828;0.84998;1" calcMode="linear"/>
       <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">Start now</text>
@@ -584,23 +583,23 @@
     </g>
 
     <g id="lets-talk" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.84998;0.85168;0.87467;0.87637;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.84998;0.87637;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="-180 0;-180 0;0 0;0 0;0 0;-180 0" keyTimes="0;0.84998;0.85168;0.87467;0.87637;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.84998;0.85168;0.87467;0.87637;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Let's talk</text>
+
+      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">Let's talk</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="about-project" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.87637;0.87806;0.90482;0.90652;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.87637;0.90652;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.87637;0.87806;0.90482;0.90652;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.7 0.7;0.7 0.7;1 1;1 1;1 1;0.7 0.7" keyTimes="0;0.87637;0.87806;0.90482;0.90652;1" calcMode="linear"/>
       <text x="0" y="0" font-size="72" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">about your project</text>
@@ -610,23 +609,23 @@
     </g>
 
     <g id="message" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.90652;0.90822;0.92744;0.92914;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.90652;0.92914;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
           <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="170 0;170 0;0 0;0 0;0 0;170 0" keyTimes="0;0.90652;0.90822;0.92744;0.92914;1" calcMode="linear"/>
           <g>
-            <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.90652;0.90822;0.92744;0.92914;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="76" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">just message me</text>
+
+      <text x="0" y="0" font-size="76" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">just message me</text>
           </g>
         </g>
       </g>
     </g>
 
     <g id="start-working" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.92914;0.93083;0.9576;0.95929;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.92914;0.95929;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.92914;0.93083;0.9576;0.95929;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="2.3 2.3;2.3 2.3;1 1;1 1;1 1;2.3 2.3" keyTimes="0;0.92914;0.93083;0.9576;0.95929;1" calcMode="linear"/>
       <text x="0" y="0" font-size="91" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">start Working</text>
@@ -636,13 +635,13 @@
     </g>
 
     <g id="on-project" opacity="0">
-      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.95929;0.96099;0.9983;1;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="53.06s" repeatCount="indefinite" values="0;1;0;0" keyTimes="0;0.95929;1;1" calcMode="discrete"/>
       <g transform="translate(600 130)">
         <g>
-          <animateTransform attributeName="transform" type="translate" dur="53.06s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.95929;0.96099;0.9983;1;1" calcMode="linear"/>
+
           <g>
             <animateTransform attributeName="transform" type="scale" dur="53.06s" repeatCount="indefinite" values="0.65 0.65;0.65 0.65;1 1;1 1;1 1;0.65 0.65" keyTimes="0;0.95929;0.96099;0.9983;1;1" calcMode="linear"/>
-      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">on your project</text>
+      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#000000" class="kinetic-text">on your project</text>
           </g>
         </g>
       </g>
