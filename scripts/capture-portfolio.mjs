@@ -173,8 +173,10 @@ async function animateScroll(page, target, duration) {
 async function confirmWebGL(page) {
   await page.waitForFunction(
     () => {
-      const canvas = document.querySelector("canvas[data-engine], canvas");
-      if (!canvas || canvas.width < 2 || canvas.height < 2) return false;
+      const canvas = [...document.querySelectorAll("canvas")].sort(
+        (a, b) => b.width * b.height - a.width * a.height,
+      )[0];
+      if (!canvas || canvas.width < 500 || canvas.height < 300) return false;
       const gl = canvas.getContext("webgl2") || canvas.getContext("webgl");
       return Boolean(gl && !gl.isContextLost());
     },
@@ -183,7 +185,9 @@ async function confirmWebGL(page) {
   );
 
   const result = await page.evaluate(() => {
-    const canvas = document.querySelector("canvas[data-engine], canvas");
+    const canvas = [...document.querySelectorAll("canvas")].sort(
+      (a, b) => b.width * b.height - a.width * a.height,
+    )[0];
     const gl = canvas?.getContext("webgl2") || canvas?.getContext("webgl");
     if (!canvas || !gl || gl.isContextLost()) return null;
 
@@ -347,16 +351,32 @@ async function main() {
     });
 
     await page.goto(PORTFOLIO_URL, { waitUntil: "domcontentloaded", timeout: 60_000 });
-    await Promise.all(modelAssetWaits);
     await page.evaluate(async () => {
       if (document.fonts?.ready) await document.fonts.ready;
     });
-    await sleep(MODEL_SETTLE_MS);
     const webgl = await confirmWebGL(page);
+    await page.waitForFunction(
+      () =>
+        [...document.querySelectorAll("*")].some((element) => {
+          const style = getComputedStyle(element);
+          return (
+            style.overflowY === "auto" &&
+            style.zIndex === "1" &&
+            element.scrollHeight > element.clientHeight + 20
+          );
+        }),
+      undefined,
+      { timeout: 45_000 },
+    );
     const scrollLayer = await findScrollLayer(page);
     if (!scrollLayer || scrollLayer.maxScroll < 500) {
       throw new Error("The portfolio scroll layer did not expose enough content to capture.");
     }
+
+    // Visit the showcase once before awaiting models so lazy scene loading can start in CI.
+    await setScrollTop(page, scrollLayer.maxScroll);
+    await Promise.all(modelAssetWaits);
+    await sleep(MODEL_SETTLE_MS);
 
     await setScrollTop(page, 0);
     await page.mouse.move(VIEWPORT.width * 0.28, VIEWPORT.height * 0.34, { steps: 2 });
