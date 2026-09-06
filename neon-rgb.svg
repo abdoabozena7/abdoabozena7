@@ -1,64 +1,650 @@
-<!-- neon-rgb.svg -->
-<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abdelrahman Abozena">
+<!-- kinetic-typography.svg -->
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abdelrahman Abozena — Agentic AI Engineer" overflow="hidden">
   <defs>
-    <!-- شريط RGB يتحرك (بديل CSS gradient animation) -->
-    <linearGradient id="rgb" x1="0%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%"   stop-color="#ff0055"/>
-      <stop offset="25%"  stop-color="#ffd319"/>
-      <stop offset="50%"  stop-color="#00ffa3"/>
-      <stop offset="75%"  stop-color="#00d4ff"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
-      <animate attributeName="x1" values="0%;-100%" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="200%;100%" dur="8s" repeatCount="indefinite"/>
-    </linearGradient>
-
-    <!-- جلو نيون -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- نفس فكرة المرجع: كتابة مرسومة بالـstroke ثم تختفي بالعكس -->
     <style>
-      .handwritten {
-        fill: url(#rgb);
-        fill-opacity: 0;
-        stroke: url(#rgb);
-        stroke-width: 2.2;
-        stroke-linecap: round;
+      .kinetic-text {
+        dominant-baseline: middle;
+        text-anchor: middle;
+        font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+        text-rendering: geometricPrecision;
+        paint-order: stroke;
         stroke-linejoin: round;
-        stroke-dasharray: 1;
-        stroke-dashoffset: 1;
-        animation: handwrite 7s ease-in-out infinite alternate;
-      }
-
-      @keyframes handwrite {
-        0%, 8% {
-          fill-opacity: 0;
-          opacity: 0.45;
-          stroke-dashoffset: 1;
-        }
-        58%, 100% {
-          fill-opacity: 0.96;
-          opacity: 1;
-          stroke-dashoffset: 0;
-        }
+        stroke-width: 1.35px;
+        stroke-opacity: 0.72;
+        filter: drop-shadow(0 0 1.4px rgba(0, 0, 0, 0.48)) drop-shadow(0 0 1.2px rgba(255, 255, 255, 0.28));
       }
     </style>
   </defs>
 
-  <!-- بار RGB نحيف فوق وتحت -->
-  <rect x="80" y="36"  width="1040" height="2.5" rx="1.25" fill="url(#rgb)"/>
-  <rect x="80" y="180" width="1040" height="2.5" rx="1.25" fill="url(#rgb)"/>
-  
-  <!-- الاسم الجديد مرسوم كـpath حتى يظل نفس الشكل في GitHub بدون اعتماد على font خارجي -->
-  <path class="handwritten" pathLength="1" filter="url(#glow)"
-        d="M208.72 138.26Q205.39 138.26 202.87 137.72Q200.35 137.18 198.50 135.11Q196.66 133.04 196.66 128.72Q196.66 122.69 200.31 112.52Q203.95 102.35 209.89 92.09Q205.39 92.36 202.78 93.44Q200.17 94.52 199.36 96.77Q199.72 96.77 200.13 97.67Q200.53 98.57 200.53 99.56Q200.53 101.18 199.09 102.13Q197.65 103.07 195.49 103.07Q192.97 103.07 191.44 101.72Q189.91 100.37 189.91 97.85Q189.91 94.79 192.29 92.27Q194.68 89.75 198.91 88.27Q203.14 86.78 208.27 86.78Q210.16 86.78 212.95 87.05Q220.33 75.35 228.56 67.93Q236.80 60.50 244.27 60.50Q248.59 60.50 251.38 61.76L237.25 128L224.29 128L231.22 95.33Q227.89 93.80 225.10 93.08Q222.31 92.36 219.16 92.09Q214.03 103.16 210.75 114.72Q207.46 126.29 207.46 133.22Q207.46 136.64 208.72 138.26M232.03 91.37L237.25 66.89Q233.38 68.96 229.19 74.59Q225.01 80.21 221.05 88.22Q227.53 89.48 232.03 91.37M261.19 128.54Q255.07 128.54 251.83 125.53Q248.59 122.51 248.59 117.02Q248.59 114.32 249.22 111.89L258.85 66.80L272.17 65L267.85 85.25Q270.37 83.72 271.99 83.22Q273.61 82.73 275.23 82.73Q285.85 82.73 285.85 98.12Q285.85 104.33 283.46 111.39Q281.08 118.46 275.55 123.50Q270.01 128.54 261.19 128.54M266.23 119.81Q269.02 119.81 271.45 116.34Q273.88 112.88 275.32 107.70Q276.76 102.53 276.76 97.76Q276.76 94.16 275.50 91.64Q274.24 89.12 271.99 89.12Q270.64 89.12 268.98 89.53Q267.31 89.93 266.68 90.74L261.73 113.60Q261.46 114.68 261.46 115.67Q261.46 119.81 266.23 119.81M299.98 128.54Q294.85 128.54 291.43 125.03Q288.01 121.52 288.01 114.05Q288.01 107.39 290.67 100.06Q293.32 92.72 298.58 87.63Q303.85 82.55 311.14 82.55Q314.83 82.55 316.63 83.81Q318.43 85.07 318.43 87.14L318.43 87.50L322.84 66.80L336.16 65L325.81 113.60Q325.45 114.95 325.45 116.48Q325.45 118.28 326.31 119.05Q327.16 119.81 329.14 119.81Q331.66 119.81 333.50 117.65Q335.35 115.49 336.43 111.89L340.21 111.89Q334.72 128 322.12 128Q318.43 128 316.13 126.02Q313.84 124.04 313.30 120.26Q310.96 123.86 307.68 126.20Q304.39 128.54 299.98 128.54M305.83 119.81Q307.99 119.81 310.19 117.83Q312.40 115.85 313.21 112.34L313.21 111.89L317.62 91.28Q316.81 88.13 313.93 88.13Q310.33 88.13 307.45 92.31Q304.57 96.50 302.95 102.39Q301.33 108.29 301.33 112.79Q301.33 117.29 302.63 118.55Q303.94 119.81 305.83 119.81M349.30 128.54Q342.64 128.54 338.95 125.08Q335.26 121.61 335.26 114.23Q335.26 108.02 337.69 100.55Q340.12 93.08 345.61 87.63Q351.10 82.19 359.56 82.19Q369.46 82.19 369.46 90.83Q369.46 95.87 366.58 100.10Q363.70 104.33 358.93 106.89Q354.16 109.46 348.76 109.82Q348.58 112.52 348.58 113.42Q348.58 117.83 350.11 119.41Q351.64 120.98 355.06 120.98Q359.92 120.98 363.38 118.73Q366.85 116.48 370.99 111.89L374.05 111.89Q364.06 128.54 349.30 128.54M349.48 105.50Q352.81 105.32 355.82 103.16Q358.84 101 360.69 97.67Q362.53 94.34 362.53 90.65Q362.53 86.96 360.28 86.96Q357.04 86.96 353.94 92.63Q350.83 98.30 349.48 105.50M379.90 128.54Q375.58 128.54 372.93 125.84Q370.27 123.14 370.27 117.74Q370.27 115.49 370.99 111.89L380.62 66.80L393.94 65L383.59 113.60Q383.23 114.95 383.23 116.48Q383.23 118.28 384.09 119.05Q384.94 119.81 386.92 119.81Q389.53 119.81 391.78 117.61Q394.03 115.40 395.02 111.89L398.80 111.89Q395.47 121.61 390.25 125.08Q385.03 128.54 379.90 128.54M391.60 128L401.14 83L414.10 83L412.93 88.58Q415.99 85.88 418.46 84.44Q420.94 83 423.82 83Q426.70 83 428.37 84.98Q430.03 86.96 430.03 89.75Q430.03 92.36 428.32 94.34Q426.61 96.32 423.55 96.32Q421.57 96.32 420.89 95.38Q420.22 94.43 419.86 92.63Q419.59 91.46 419.32 90.92Q419.05 90.38 418.33 90.38Q416.44 90.38 415.13 91.15Q413.83 91.91 411.76 93.80L404.56 128L391.60 128M439.66 128.54Q434.53 128.54 431.11 125.03Q427.69 121.52 427.69 114.05Q427.69 107.39 430.34 100.06Q433 92.72 438.26 87.63Q443.53 82.55 450.82 82.55Q454.51 82.55 456.31 83.81Q458.11 85.07 458.11 87.14L458.11 87.77L459.10 83L472.06 83L465.58 113.60Q465.22 114.95 465.22 116.48Q465.22 120.35 468.91 120.35Q471.43 120.35 473.27 118.01Q475.12 115.67 476.20 111.89L479.98 111.89Q476.65 121.61 471.74 125.08Q466.84 128.54 461.89 128.54Q458.11 128.54 455.81 126.42Q453.52 124.31 453.07 120.26Q450.46 123.95 447.26 126.25Q444.07 128.54 439.66 128.54M445.51 119.81Q447.76 119.81 449.96 117.69Q452.17 115.58 452.98 111.89L457.30 91.55Q457.30 90.38 456.40 89.25Q455.50 88.13 453.61 88.13Q450.01 88.13 447.13 92.31Q444.25 96.50 442.63 102.39Q441.01 108.29 441.01 112.79Q441.01 117.29 442.31 118.55Q443.62 119.81 445.51 119.81M508.69 128.54Q503.20 128.54 500.63 125.61Q498.07 122.69 498.07 118.37Q498.07 116.48 498.52 114.09Q498.97 111.71 499.46 109.46Q499.96 107.21 500.14 106.58Q500.86 103.43 501.49 100.37Q502.12 97.31 502.12 95.42Q502.12 90.83 498.88 90.83Q496.54 90.83 494.74 93.13Q492.94 95.42 491.86 99.11L485.74 128L472.78 128L485.83 66.80L499.15 65L494.29 87.68Q498.79 82.64 504.82 82.64Q509.41 82.64 512.11 85.16Q514.81 87.68 514.81 92.81Q514.81 95.42 514.18 98.62Q513.55 101.81 512.38 106.40Q511.66 109.19 511.07 111.84Q510.49 114.50 510.49 116.03Q510.49 117.83 511.30 118.82Q512.11 119.81 514.09 119.81Q516.79 119.81 518.41 117.88Q520.03 115.94 521.65 111.89L525.43 111.89Q522.10 121.79 517.73 125.17Q513.37 128.54 508.69 128.54M576.37 128.54Q570.88 128.54 568.31 125.61Q565.75 122.69 565.75 118.37Q565.75 116.48 566.20 114.09Q566.65 111.71 567.14 109.46Q567.64 107.21 567.82 106.58Q568.54 103.43 569.17 100.37Q569.80 97.31 569.80 95.42Q569.80 90.83 566.56 90.83Q564.22 90.83 562.42 93.13Q560.62 95.42 559.54 99.11L553.42 128L540.46 128L547.03 96.95Q547.30 95.87 547.30 94.70Q547.30 90.74 544.60 90.74Q542.08 90.74 540.24 93.03Q538.39 95.33 537.31 99.11L531.19 128L518.23 128L527.77 83L540.73 83L539.74 87.68Q544.33 82.55 550.72 82.55Q558.64 82.55 559.99 90.29Q564.94 82.64 572.50 82.64Q577.09 82.64 579.79 85.16Q582.49 87.68 582.49 92.81Q582.49 95.42 581.86 98.62Q581.23 101.81 580.06 106.40Q579.34 109.19 578.75 111.84Q578.17 114.50 578.17 116.03Q578.17 117.83 578.98 118.82Q579.79 119.81 581.77 119.81Q584.47 119.81 586.09 117.88Q587.71 115.94 589.33 111.89L593.11 111.89Q589.78 121.79 585.41 125.17Q581.05 128.54 576.37 128.54M600.13 128.54Q595 128.54 591.58 125.03Q588.16 121.52 588.16 114.05Q588.16 107.39 590.81 100.06Q593.47 92.72 598.73 87.63Q604 82.55 611.29 82.55Q614.98 82.55 616.78 83.81Q618.58 85.07 618.58 87.14L618.58 87.77L619.57 83L632.53 83L626.05 113.60Q625.69 114.95 625.69 116.48Q625.69 120.35 629.38 120.35Q631.90 120.35 633.74 118.01Q635.59 115.67 636.67 111.89L640.45 111.89Q637.12 121.61 632.21 125.08Q627.31 128.54 622.36 128.54Q618.58 128.54 616.28 126.42Q613.99 124.31 613.54 120.26Q610.93 123.95 607.73 126.25Q604.54 128.54 600.13 128.54M605.98 119.81Q608.23 119.81 610.43 117.69Q612.64 115.58 613.45 111.89L617.77 91.55Q617.77 90.38 616.87 89.25Q615.97 88.13 614.08 88.13Q610.48 88.13 607.60 92.31Q604.72 96.50 603.10 102.39Q601.48 108.29 601.48 112.79Q601.48 117.29 602.78 118.55Q604.09 119.81 605.98 119.81M669.16 128.54Q663.67 128.54 661.10 125.61Q658.54 122.69 658.54 118.37Q658.54 116.48 658.99 114.09Q659.44 111.71 659.93 109.46Q660.43 107.21 660.61 106.58Q661.33 103.43 661.96 100.37Q662.59 97.31 662.59 95.42Q662.59 90.83 659.35 90.83Q657.01 90.83 655.21 93.13Q653.41 95.42 652.33 99.11L646.21 128L633.25 128L642.79 83L655.75 83L654.76 87.68Q659.26 82.64 665.29 82.64Q669.88 82.64 672.58 85.16Q675.28 87.68 675.28 92.81Q675.28 95.42 674.65 98.62Q674.02 101.81 672.85 106.40Q672.13 109.19 671.54 111.84Q670.96 114.50 670.96 116.03Q670.96 117.83 671.77 118.82Q672.58 119.81 674.56 119.81Q677.26 119.81 678.88 117.88Q680.50 115.94 682.12 111.89L685.90 111.89Q682.57 121.79 678.20 125.17Q673.84 128.54 669.16 128.54M721.27 138.26Q717.94 138.26 715.42 137.72Q712.90 137.18 711.05 135.11Q709.21 133.04 709.21 128.72Q709.21 122.69 712.86 112.52Q716.50 102.35 722.44 92.09Q717.94 92.36 715.33 93.44Q712.72 94.52 711.91 96.77Q712.27 96.77 712.67 97.67Q713.08 98.57 713.08 99.56Q713.08 101.18 711.64 102.13Q710.20 103.07 708.04 103.07Q705.52 103.07 703.99 101.72Q702.46 100.37 702.46 97.85Q702.46 94.79 704.85 92.27Q707.23 89.75 711.46 88.27Q715.69 86.78 720.82 86.78Q722.71 86.78 725.50 87.05Q732.88 75.35 741.12 67.93Q749.35 60.50 756.82 60.50Q761.14 60.50 763.93 61.76L749.80 128L736.84 128L743.77 95.33Q740.44 93.80 737.65 93.08Q734.86 92.36 731.71 92.09Q726.58 103.16 723.29 114.72Q720.01 126.29 720.01 133.22Q720.01 136.64 721.27 138.26M744.58 91.37L749.80 66.89Q745.93 68.96 741.75 74.59Q737.56 80.21 733.60 88.22Q740.08 89.48 744.58 91.37M773.74 128.54Q767.62 128.54 764.38 125.53Q761.14 122.51 761.14 117.02Q761.14 114.32 761.77 111.89L771.40 66.80L784.72 65L780.40 85.25Q782.92 83.72 784.54 83.22Q786.16 82.73 787.78 82.73Q798.40 82.73 798.40 98.12Q798.40 104.33 796.01 111.39Q793.63 118.46 788.10 123.50Q782.56 128.54 773.74 128.54M778.78 119.81Q781.57 119.81 784 116.34Q786.43 112.88 787.87 107.70Q789.31 102.53 789.31 97.76Q789.31 94.16 788.05 91.64Q786.79 89.12 784.54 89.12Q783.19 89.12 781.52 89.53Q779.86 89.93 779.23 90.74L774.28 113.60Q774.01 114.68 774.01 115.67Q774.01 119.81 778.78 119.81M814.87 128.36Q808.21 128.36 804.34 124.94Q800.47 121.52 800.47 114.14Q800.47 108.02 802.99 100.55Q805.51 93.08 811.09 87.63Q816.67 82.19 825.13 82.19Q836.65 82.19 836.65 96.59L836.65 96.68Q836.92 96.77 837.64 96.77Q840.61 96.77 844.48 95.19Q848.35 93.62 851.50 91.37L852.31 93.80Q849.70 96.59 845.51 98.53Q841.33 100.46 836.38 101.27Q835.66 109.46 832.69 115.58Q829.72 121.70 825.04 125.03Q820.36 128.36 814.87 128.36M818.47 120.26Q820.63 120.26 822.79 117.78Q824.95 115.31 826.57 111.03Q828.19 106.76 828.91 101.54Q826.48 101 826.48 97.76Q826.48 94.07 829.27 92.90Q829.09 89.93 828.37 88.81Q827.65 87.68 825.85 87.68Q822.88 87.68 820.09 92Q817.30 96.32 815.59 102.35Q813.88 108.38 813.88 112.97Q813.88 117.29 814.87 118.78Q815.86 120.26 818.47 120.26M841.24 128L864.19 87.86L859.15 87.86Q856.63 87.86 855.41 88.13Q854.20 88.40 854.20 89.30Q854.20 89.48 854.70 89.70Q855.19 89.93 855.19 91.28Q855.19 93.62 853.75 94.84Q852.31 96.05 850.33 96.05Q848.62 96.05 847.40 95.02Q846.19 93.98 846.19 92.09Q846.19 90.20 847.50 88.04Q848.80 85.88 851.19 84.44Q853.57 83 856.63 83L879.76 83L857.71 121.07Q858.25 121.07 859.69 121.25Q862.75 121.61 864.55 121.61Q868.42 121.61 868.78 119.81Q867.97 119.72 867.52 119.22Q867.07 118.73 867.07 117.92Q867.07 116.48 868.42 115.27Q869.77 114.05 872.11 114.05Q874.09 114.05 875.08 115.22Q876.07 116.39 876.07 118.37Q876.07 120.53 874.72 122.78Q873.37 125.03 870.85 126.52Q868.33 128 865.09 128L841.24 128M892.63 128.54Q885.97 128.54 882.28 125.08Q878.59 121.61 878.59 114.23Q878.59 108.02 881.02 100.55Q883.45 93.08 888.94 87.63Q894.43 82.19 902.89 82.19Q912.79 82.19 912.79 90.83Q912.79 95.87 909.91 100.10Q907.03 104.33 902.26 106.89Q897.49 109.46 892.09 109.82Q891.91 112.52 891.91 113.42Q891.91 117.83 893.44 119.41Q894.97 120.98 898.39 120.98Q903.25 120.98 906.72 118.73Q910.18 116.48 914.32 111.89L917.38 111.89Q907.39 128.54 892.63 128.54M892.81 105.50Q896.14 105.32 899.15 103.16Q902.17 101 904.01 97.67Q905.86 94.34 905.86 90.65Q905.86 86.96 903.61 86.96Q900.37 86.96 897.26 92.63Q894.16 98.30 892.81 105.50M946.81 128.54Q941.32 128.54 938.75 125.61Q936.19 122.69 936.19 118.37Q936.19 116.48 936.64 114.09Q937.09 111.71 937.58 109.46Q938.08 107.21 938.26 106.58Q938.98 103.43 939.61 100.37Q940.24 97.31 940.24 95.42Q940.24 90.83 937 90.83Q934.66 90.83 932.86 93.13Q931.06 95.42 929.98 99.11L923.86 128L910.90 128L920.44 83L933.40 83L932.41 87.68Q936.91 82.64 942.94 82.64Q947.53 82.64 950.23 85.16Q952.93 87.68 952.93 92.81Q952.93 95.42 952.30 98.62Q951.67 101.81 950.50 106.40Q949.78 109.19 949.19 111.84Q948.61 114.50 948.61 116.03Q948.61 117.83 949.42 118.82Q950.23 119.81 952.21 119.81Q954.91 119.81 956.53 117.88Q958.15 115.94 959.77 111.89L963.55 111.89Q960.22 121.79 955.85 125.17Q951.49 128.54 946.81 128.54M970.57 128.54Q965.44 128.54 962.02 125.03Q958.60 121.52 958.60 114.05Q958.60 107.39 961.25 100.06Q963.91 92.72 969.17 87.63Q974.44 82.55 981.73 82.55Q985.42 82.55 987.22 83.81Q989.02 85.07 989.02 87.14L989.02 87.77L990.01 83L1002.97 83L996.49 113.60Q996.13 114.95 996.13 116.48Q996.13 120.35 999.82 120.35Q1002.34 120.35 1004.18 118.01Q1006.03 115.67 1007.11 111.89L1010.89 111.89Q1007.56 121.61 1002.65 125.08Q997.75 128.54 992.80 128.54Q989.02 128.54 986.73 126.42Q984.43 124.31 983.98 120.26Q981.37 123.95 978.17 126.25Q974.98 128.54 970.57 128.54M976.42 119.81Q978.67 119.81 980.88 117.69Q983.08 115.58 983.89 111.89L988.21 91.55Q988.21 90.38 987.31 89.25Q986.41 88.13 984.52 88.13Q980.92 88.13 978.04 92.31Q975.16 96.50 973.54 102.39Q971.92 108.29 971.92 112.79Q971.92 117.29 973.23 118.55Q974.53 119.81 976.42 119.81"/>
+    <g id="hey" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.0017;0.04354;0.04523;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.0017;0.04354;0.04523;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="3.8 3.8;1 1;1 1;1 1;1 1" keyTimes="0;0.0017;0.04354;0.04523;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="126" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Hey</text>
+          </g>
+        </g>
+      </g>
+    </g>
 
-  <!-- ساب تايتل هادي -->
-  <text x="50%" y="150" text-anchor="middle"
-        font-family="Fira Code, Consolas, monospace"
-        font-size="18" fill="#9fb0ff" opacity="0.9">
-  I've Exceeded Expectations Even My Own     <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
-  </text>
+    <g id="welcome" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.04523;0.04693;0.05371;0.05541;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="-80 0;-80 0;0 0;0 0;0 0;-80 0" keyTimes="0;0.04523;0.04693;0.05371;0.05541;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.35 1.35;1.35 1.35;1 1;1 1;1 1;1.35 1.35" keyTimes="0;0.04523;0.04693;0.05371;0.05541;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="96" font-weight="900" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="welcome-to" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.05541;0.05711;0.06389;0.06559;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.05541;0.05711;0.06389;0.06559;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.05541;0.05711;0.06389;0.06559;1" calcMode="linear"/>
+      <text x="-170" y="0" font-size="72" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
+      <text x="120" y="0" font-size="82" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">To</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="welcome-to-my" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.06559;0.06728;0.07369;0.07539;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.06559;0.06728;0.07369;0.07539;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.06559;0.06728;0.07369;0.07539;1" calcMode="linear"/>
+      <text x="-245" y="0" font-size="63" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
+      <text x="-60" y="0" font-size="70" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">To</text>
+      <text x="120" y="0" font-size="78" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">My</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="welcome-to-my-work" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.07539;0.07708;0.08424;0.08594;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.07539;0.07708;0.08424;0.08594;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.8 0.8;0.8 0.8;1 1;1 1;1 1;0.8 0.8" keyTimes="0;0.07539;0.07708;0.08424;0.08594;1" calcMode="linear"/>
+      <text x="-270" y="0" font-size="58" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Welcome</text>
+      <text x="-92" y="0" font-size="63" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">To</text>
+      <text x="65" y="0" font-size="68" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">My</text>
+      <text x="260" y="0" font-size="76" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">Work</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="im" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.08632;0.08801;0.1144;0.11609;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.08632;0.08801;0.1144;0.11609;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.3 2.3;2.3 2.3;1 1;1 1;1 1;2.3 2.3" keyTimes="0;0.08632;0.08801;0.1144;0.11609;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">I'm</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="abdelrahman" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.11609;0.11779;0.14116;0.14286;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.11609;0.11779;0.14116;0.14286;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="5.6 5.6;5.6 5.6;1 1;1 1;0.82 0.82;5.6 5.6" keyTimes="0;0.11609;0.11779;0.14116;0.14286;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="-2px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">ABDELRAHMAN</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="an" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.14286;0.14455;0.15096;0.15266;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.14286;0.14455;0.15096;0.15266;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.14286;0.14455;0.15096;0.15266;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">An</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="agentic" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.15266;0.15435;0.16076;0.16246;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="-170 0;-170 0;0 0;0 0;0 0;-170 0" keyTimes="0;0.15266;0.15435;0.16076;0.16246;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.15266;0.15435;0.16076;0.16246;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="102" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agentic</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="ai" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.16246;0.16415;0.17056;0.17226;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.16246;0.16415;0.17056;0.17226;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.8 2.8;2.8 2.8;1 1;1 1;1 1;2.8 2.8" keyTimes="0;0.16246;0.16415;0.17056;0.17226;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="124" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">AI</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="ai-engineer" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.17226;0.17395;0.19732;0.19902;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.17226;0.17395;0.19732;0.19902;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.75 0.75;0.75 0.75;1 1;1 1;1 1;0.75 0.75" keyTimes="0;0.17226;0.17395;0.19732;0.19902;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="82" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F88A08" class="kinetic-text">AI Engineer</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="full-role" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.2058;0.2075;0.23502;0.23671;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.2058;0.2075;0.23502;0.23671;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.2058;0.2075;0.23502;0.23671;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="70" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agentic AI Engineer</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="i" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.24425;0.24595;0.25085;0.25254;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.24425;0.24595;0.25085;0.25254;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.2 2.2;2.2 2.2;1 1;1 1;1 1;2.2 2.2" keyTimes="0;0.24425;0.24595;0.25085;0.25254;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="128" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">I</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="heart" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.25254;0.25424;0.26027;0.26197;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.25254;0.25424;0.26027;0.26197;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.6 2.6;2.6 2.6;1 1;1 1;1 1;2.6 2.6" keyTimes="0;0.25254;0.25424;0.26027;0.26197;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="110" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">❤</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="building" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.26197;0.26366;0.27459;0.27629;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="160 0;160 0;0 0;0 0;0 0;160 0" keyTimes="0;0.26197;0.26366;0.27459;0.27629;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.26197;0.26366;0.27459;0.27629;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="90" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">building</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="agents" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.27629;0.27799;0.29043;0.29212;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.27629;0.27799;0.29043;0.29212;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.6 1.6;1.6 1.6;1 1;1 1;1 1;1.6 1.6" keyTimes="0;0.27629;0.27799;0.29043;0.29212;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="108" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">Agents</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="agents-reason" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.29212;0.29382;0.33377;0.33547;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.29212;0.29382;0.33377;0.33547;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.29212;0.29382;0.33377;0.33547;1" calcMode="linear"/>
+      <text x="-190" y="0" font-size="69" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Agents that</text>
+      <text x="190" y="0" font-size="90" font-weight="900" letter-spacing="1px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">reason</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="through" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.34225;0.34395;0.3545;0.3562;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="200 0;200 0;0 0;0 0;0 0;200 0" keyTimes="0;0.34225;0.34395;0.3545;0.3562;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.34225;0.34395;0.3545;0.3562;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="88" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">Through</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="multi-agent" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.3562;0.3579;0.3922;0.39389;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.3562;0.3579;0.3922;0.39389;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.8 0.8;0.8 0.8;1 1;1 1;1 1;0.8 0.8" keyTimes="0;0.3562;0.3579;0.3922;0.39389;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="69" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Multi-Agent Systems</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="orchestration" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.39389;0.39559;0.43479;0.43649;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.39389;0.39559;0.43479;0.43649;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;4.6 1;4.6 1;4.6 1;1 1" keyTimes="0;0.39389;0.39559;0.43479;0.43649;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="96" font-weight="900" letter-spacing="-3px" fill="#000000" stroke="#F9B709" class="kinetic-text">orchestration</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="local-first" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.44327;0.44497;0.46947;0.47116;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.44327;0.44497;0.46947;0.47116;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.45 1.45;1.45 1.45;1 1;1 1;1 1;1.45 1.45" keyTimes="0;0.44327;0.44497;0.46947;0.47116;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Local-First</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="and" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.47116;0.47286;0.48078;0.48247;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.47116;0.47286;0.48078;0.48247;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.47116;0.47286;0.48078;0.48247;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="64" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">and</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="evidence-driven" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.48247;0.48417;0.50905;0.51074;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.48247;0.48417;0.50905;0.51074;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.75 0.75;0.75 0.75;1 1;1 1;1 1;0.75 0.75" keyTimes="0;0.48247;0.48417;0.50905;0.51074;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="76" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F88A08" class="kinetic-text">Evidence-Driven</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="agents-2" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.51074;0.51244;0.53166;0.53336;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="-180 0;-180 0;0 0;0 0;0 0;-180 0" keyTimes="0;0.51074;0.51244;0.53166;0.53336;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.51074;0.51244;0.53166;0.53336;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agents</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="scale" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.53336;0.53505;0.54109;0.54278;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.53336;0.53505;0.54109;0.54278;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.4 2.4;2.4 2.4;1 1;1 1;1 1;2.4 2.4" keyTimes="0;0.53336;0.53505;0.54109;0.54278;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="106" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">Scale</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="your" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.54278;0.54448;0.55239;0.55409;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="160 0;160 0;0 0;0 0;0 0;160 0" keyTimes="0;0.54278;0.54448;0.55239;0.55409;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.54278;0.54448;0.55239;0.55409;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="72" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">your</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="systems" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.55409;0.55579;0.56672;0.56841;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.55409;0.55579;0.56672;0.56841;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.65 0.65;0.65 0.65;1 1;1 1;1 1;0.65 0.65" keyTimes="0;0.55409;0.55579;0.56672;0.56841;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="108" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">systems</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="dont" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.56841;0.57011;0.58179;0.58349;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.56841;0.57011;0.58179;0.58349;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.2 2.2;2.2 2.2;1 1;1 1;1 1;2.2 2.2" keyTimes="0;0.56841;0.57011;0.58179;0.58349;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">Don't</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="blink" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.7 1;0.7 1;1 1;1 1;1 1;0.7 1" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="112" font-weight="900" letter-spacing="-7px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Blink<animate attributeName="letter-spacing" dur="26.53s" repeatCount="indefinite" values="-7px;-7px;30px;30px;30px;-7px" keyTimes="0;0.58349;0.58519;0.59763;0.59932;1" calcMode="linear"/></text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="python" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.59932;0.60102;0.61082;0.61251;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="-160 0;-160 0;0 0;0 0;0 0;-160 0" keyTimes="0;0.59932;0.60102;0.61082;0.61251;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.59932;0.60102;0.61082;0.61251;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">Python</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="fastapi" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.61251;0.61421;0.62401;0.62571;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="170 0;170 0;0 0;0 0;0 0;170 0" keyTimes="0;0.61251;0.61421;0.62401;0.62571;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.61251;0.61421;0.62401;0.62571;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">FastAPI</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="kafka" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.62571;0.6274;0.6372;0.6389;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.62571;0.6274;0.6372;0.6389;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.8 1.8;1.8 1.8;1 1;1 1;1 1;1.8 1.8" keyTimes="0;0.62571;0.6274;0.6372;0.6389;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="94" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">Kafka</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="ollama" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.6389;0.6406;0.65303;0.65473;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.6389;0.6406;0.65303;0.65473;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.7 0.7;0.7 0.7;1 1;1 1;1 1;0.7 0.7" keyTimes="0;0.6389;0.6406;0.65303;0.65473;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="94" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Ollama</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="build" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.65511;0.6568;0.66924;0.67094;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.65511;0.6568;0.66924;0.67094;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.2 2.2;2.2 2.2;1 1;1 1;1 1;2.2 2.2" keyTimes="0;0.65511;0.6568;0.66924;0.67094;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="114" font-weight="900" letter-spacing="0px" fill="#000000" stroke="#F9B709" class="kinetic-text">Build</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="bigger" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.67094;0.67263;0.68432;0.68602;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="-180 0;-180 0;0 0;0 0;0 0;-180 0" keyTimes="0;0.67094;0.67263;0.68432;0.68602;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.67094;0.67263;0.68432;0.68602;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="100" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">bigger</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="rag" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.68602;0.68771;0.70128;0.70298;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.68602;0.68771;0.70128;0.70298;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.6 0.6;0.6 0.6;1 1;1 1;1 1;0.6 0.6" keyTimes="0;0.68602;0.68771;0.70128;0.70298;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="126" font-weight="900" letter-spacing="2px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">RAG</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="and-2" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.70298;0.70467;0.71259;0.71429;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.70298;0.70467;0.71259;0.71429;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.70298;0.70467;0.71259;0.71429;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="64" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">and</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="agents-3" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.71429;0.71598;0.72767;0.72936;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.71429;0.71598;0.72767;0.72936;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.71429;0.71598;0.72767;0.72936;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="106" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Agents</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="stop-guessing" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.72936;0.73106;0.74651;0.74821;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="180 0;180 0;0 0;0 0;0 0;180 0" keyTimes="0;0.72936;0.73106;0.74651;0.74821;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.72936;0.73106;0.74651;0.74821;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="82" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">stop guessing</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="start-shipping" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.74821;0.74991;0.7729;0.77459;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.74821;0.74991;0.7729;0.77459;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.8 1.8;1.8 1.8;1 1;1 1;1 1;1.8 1.8" keyTimes="0;0.74821;0.74991;0.7729;0.77459;1" calcMode="linear"/>
+      <text x="-190" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">start</text>
+      <text x="190" y="0" font-size="104" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">shipping</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="real-systems" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.77459;0.77629;0.80305;0.80475;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.77459;0.77629;0.80305;0.80475;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.7 0.7;0.7 0.7;1 1;1 1;1 1;0.7 0.7" keyTimes="0;0.77459;0.77629;0.80305;0.80475;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="103" font-weight="900" letter-spacing="-1px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">real systems</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="question" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.80475;0.80645;0.81964;0.82133;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.80475;0.80645;0.81964;0.82133;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="4.5 4.5;4.5 4.5;1 1;1 1;1 1;4.5 4.5" keyTimes="0;0.80475;0.80645;0.81964;0.82133;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="142" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">?</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="start-now" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.82133;0.82303;0.84828;0.84998;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.82133;0.82303;0.84828;0.84998;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1.5 1.5;1.5 1.5;1 1;1 1;1 1;1.5 1.5" keyTimes="0;0.82133;0.82303;0.84828;0.84998;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#F88A08" stroke="#F9B709" class="kinetic-text">Start now</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="lets-talk" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.84998;0.85168;0.87467;0.87637;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="-180 0;-180 0;0 0;0 0;0 0;-180 0" keyTimes="0;0.84998;0.85168;0.87467;0.87637;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.84998;0.85168;0.87467;0.87637;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="92" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">Let's talk</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="about-project" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.87637;0.87806;0.90482;0.90652;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.87637;0.87806;0.90482;0.90652;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.7 0.7;0.7 0.7;1 1;1 1;1 1;0.7 0.7" keyTimes="0;0.87637;0.87806;0.90482;0.90652;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="72" font-weight="800" letter-spacing="0px" fill="#9B9B9B" stroke="#9B9B9B" class="kinetic-text">about your project</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="message" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.90652;0.90822;0.92744;0.92914;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="170 0;170 0;0 0;0 0;0 0;170 0" keyTimes="0;0.90652;0.90822;0.92744;0.92914;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="1 1;1 1;1 1;1 1;1 1;1 1" keyTimes="0;0.90652;0.90822;0.92744;0.92914;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="76" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">just message me</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="start-working" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.92914;0.93083;0.9576;0.95929;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.92914;0.93083;0.9576;0.95929;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="2.3 2.3;2.3 2.3;1 1;1 1;1 1;2.3 2.3" keyTimes="0;0.92914;0.93083;0.9576;0.95929;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="91" font-weight="900" letter-spacing="0px" fill="#F9B709" stroke="#F88A08" class="kinetic-text">start Working</text>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="on-project" opacity="0">
+      <animate attributeName="opacity" dur="26.53s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.95929;0.96099;0.9983;1;1" calcMode="linear"/>
+      <g transform="translate(600 130)">
+        <g>
+          <animateTransform attributeName="transform" type="translate" dur="26.53s" repeatCount="indefinite" values="0 0;0 0;0 0;0 0;0 0;0 0" keyTimes="0;0.95929;0.96099;0.9983;1;1" calcMode="linear"/>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="26.53s" repeatCount="indefinite" values="0.65 0.65;0.65 0.65;1 1;1 1;1 1;0.65 0.65" keyTimes="0;0.95929;0.96099;0.9983;1;1" calcMode="linear"/>
+      <text x="0" y="0" font-size="88" font-weight="900" letter-spacing="0px" fill="#FFFFFF" stroke="#9B9B9B" class="kinetic-text">on your project</text>
+          </g>
+        </g>
+      </g>
+    </g>
 </svg>
