@@ -11,12 +11,12 @@ const PORTFOLIO_URL =
   "https://abdoabozena7.github.io/3d_scroll_portoflio/";
 const OUTPUT_DIR = path.join(PROFILE_ROOT, "assets", "portfolio-preview");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "portfolio-preview.webp");
-const VIEWPORT = { width: 1440, height: 900 };
+const VIEWPORT = { width: 1280, height: 800 };
 const POSTER_LEAD_SECONDS = 1;
-const HERO_POSTER_SECONDS = 1.2;
+const HERO_POSTER_SECONDS = 5;
 const MODEL_SETTLE_MS = 15_000;
 const SHOWCASE_SETTLE_MS = 2_500;
-const HERO_SETTLE_MS = 3_000;
+const HERO_SETTLE_MS = 5_000;
 const SCREENSHOT_TIMEOUT_MS = 60_000;
 const MODEL_ASSETS = [
   "dalithe_persistence_of_memory.glb",
@@ -24,7 +24,7 @@ const MODEL_ASSETS = [
   "window.glb",
 ];
 const MIN_SHOWCASE_SCREENSHOT_BYTES = 120 * 1024;
-const MAX_OUTPUT_BYTES = 12 * 1024 * 1024;
+const MAX_OUTPUT_BYTES = 10 * 1024 * 1024;
 const MIN_OUTPUT_BYTES = 100 * 1024;
 
 const ffmpegPath = process.env.FFMPEG_PATH || ffmpegPackagePath;
@@ -240,8 +240,8 @@ async function replaceAtomically(source, destination) {
 
 async function encodeWebP(videoPath, posterPath, trimStartSeconds, stagingDir) {
   const attempts = [
-    { width: 1152, fps: 12, quality: 72 },
-    { width: 1024, fps: 10, quality: 64 },
+    { width: 1024, fps: 10, quality: 68 },
+    { width: 896, fps: 8, quality: 60 },
   ];
 
   for (const [index, attempt] of attempts.entries()) {
@@ -287,7 +287,11 @@ async function encodeWebP(videoPath, posterPath, trimStartSeconds, stagingDir) {
       throw new Error(`Animated WebP validation found only ${frames} frame(s).`);
     }
 
-    if (size <= MAX_OUTPUT_BYTES || index === attempts.length - 1) {
+    if (size > MAX_OUTPUT_BYTES && index === attempts.length - 1) {
+      throw new Error(`Animated WebP exceeds the size limit (${size} bytes).`);
+    }
+
+    if (size <= MAX_OUTPUT_BYTES) {
       return {
         candidate,
         size,
@@ -412,11 +416,11 @@ async function main() {
     );
 
     const sequence = [
-      { progress: 0.24, duration: 1_200, hold: 650, pointer: [0.62, 0.42] },
-      { progress: 0.52, duration: 1_400, hold: 700, pointer: [0.34, 0.58] },
-      { progress: 0.75, duration: 1_400, hold: 750, pointer: [0.68, 0.34] },
-      { progress: 1.00, duration: 1_600, hold: 2_800, pointer: [0.52, 0.36] },
-      { progress: 0.00, duration: 1_900, hold: HERO_SETTLE_MS, pointer: [0.28, 0.46] },
+      { progress: 0.24, duration: 4_200, hold: 1_800, pointer: [0.62, 0.42] },
+      { progress: 0.52, duration: 5_200, hold: 2_200, pointer: [0.34, 0.58] },
+      { progress: 0.75, duration: 5_200, hold: 2_400, pointer: [0.68, 0.34] },
+      { progress: 1.00, duration: 6_500, hold: 5_000, pointer: [0.52, 0.36] },
+      { progress: 0.00, duration: 7_500, hold: 0, pointer: [0.28, 0.46] },
     ];
     let currentScroll = 0;
     const captureStartedAt = Date.now();
