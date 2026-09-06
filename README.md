@@ -1,13 +1,51 @@
+<!-- ====== Color Wave Header ====== -->
 <p align="center">
-  <a href="https://abdoabozena7.github.io/3d_scroll_portoflio/">
-    <img src="./assets/portfolio-preview/portfolio-preview.webp" width="100%" alt="Animated preview of Abdelrahman's interactive 3D portfolio" />
+  <img src="./neon-rgb.svg" alt="Abdelrahman Mohamed — RGB Neon" />
+</p>
+
+<p align="center">
+  <svg width="800" height="70" viewBox="0 0 800 70">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ff6a00">
+          <animate attributeName="stop-color" values="#ff6a00;#ffd319;#00d4ff;#ff6a00" dur="8s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="100%" stop-color="#ffd319">
+          <animate attributeName="stop-color" values="#ffd319;#00d4ff;#ff6a00;#ffd319" dur="8s" repeatCount="indefinite"/>
+        </stop>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="30" width="800" height="10" rx="5" fill="url(#grad1)">
+      <animate attributeName="y" values="15;30;15" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <circle r="6" fill="#ffffff">
+      <animate attributeName="cx" values="0;800;0" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="35;20;35" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+</p>
+
+
+
+<!-- ====== Social Links ====== -->
+<p align="center">
+  <a href="https://wa.me/qr/L4NBPBFEZE2OL1" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  </a>
+
+  <a href="https://www.instagram.com/abdoabozena1?igsh=OWFjYmt4OXVhNmRv" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+  </a>
+
+  <a href="https://www.linkedin.com/in/abdelrahman-abozena" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+
+  <a href="https://abdoabozena7.github.io/Clean_Portofoio/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white">
   </a>
 </p>
 
-<p align="center">
-  <a href="https://abdoabozena7.github.io/3d_scroll_portoflio/">Interactive version ↗</a>
-</p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abdoabozena7/abdoabozena7/output/snake-dark.svg" alt="GitHub contribution snake" />
-</p>
+
+![snake gif](https://raw.githubusercontent.com/abdoabozena7/abdoabozena7/output/snake-dark.svg)
