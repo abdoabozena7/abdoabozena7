@@ -15,19 +15,23 @@
        font-weight="900" text-anchor="middle" dominant-baseline="middle"
        paint-order="stroke fill" stroke="#000000" stroke-width="4"
        stroke-opacity="1" stroke-linejoin="round">
-      <text x="600" y="132" font-size="116" fill="#FFFFFF" stroke="#F88A08">HEY</text>
-      <text x="600" y="352" font-size="76" fill="#FFFFFF" stroke="#F88A08">WELCOME TO MY WORK</text>
-      <text x="600" y="572" font-size="82" fill="#F9B709" stroke="#F88A08">I'M ABDELRAHMAN</text>
-      <text x="600" y="792" font-size="78" fill="#FFFFFF" stroke="#F88A08">AGENTIC AI ENGINEER</text>
-      <text x="600" y="1012" font-size="66" fill="#FFFFFF" stroke="#F88A08"><tspan>I BUILD AGENTS THAT </tspan><tspan fill="#F9B709" stroke="#F88A08">REASON</tspan></text>
+      <path d="M470 190H730 M390 410H810 M350 630H850 M350 850H850 M300 1070H900 M240 1290H960 M390 1510H810"
+        fill="none" stroke="#F88A08" stroke-width="2" stroke-dasharray="1 14"
+        stroke-linecap="round" opacity="0.78" />
+
+      <text x="600" y="132" font-size="88" fill="#FFFFFF" stroke="#F88A08"><tspan>HEY, </tspan><tspan fill="#F9B709">WELCOME IN</tspan></text>
+      <text x="600" y="352" font-size="84" letter-spacing="2" fill="#FFFFFF" stroke="#F88A08"><tspan>BUILD. </tspan><tspan fill="#F9B709">SHIP.</tspan><tspan> REPEAT.</tspan></text>
+      <text x="600" y="572" font-size="82" fill="#9B9B9B" stroke="#F88A08"><tspan>I'M </tspan><tspan fill="#F9B709">ABDELRAHMAN</tspan></text>
+      <text x="600" y="792" font-size="78" fill="#FFFFFF" stroke="#F88A08"><tspan>AGENTIC </tspan><tspan fill="#F9B709">AI</tspan><tspan> ENGINEER</tspan></text>
+      <text x="600" y="1012" font-size="64" fill="#FFFFFF" stroke="#F88A08"><tspan>I BUILD </tspan><tspan fill="#F9B709">AGENTS</tspan><tspan> THAT </tspan><tspan fill="#F9B709">REASON</tspan></text>
       <text x="600" y="1232" font-size="68" fill="#F9B709" stroke="#F88A08">RAG &#x2022; MULTI-AGENT &#x2022; FASTAPI</text>
-      <text x="600" y="1452" font-size="58" fill="#FFFFFF" stroke="#F88A08"><tspan>LET'S BUILD SOMETHING </tspan><tspan fill="#F9B709" stroke="#F88A08">REAL</tspan></text>
+      <text x="600" y="1452" font-size="68" fill="#FFFFFF" stroke="#F88A08"><tspan>LET'S MAKE IT </tspan><tspan fill="#F9B709">REAL</tspan></text>
 
       <animateTransform attributeName="transform" attributeType="XML" type="translate"
-        dur="10.5s" repeatCount="indefinite" calcMode="spline"
-        values="0 0;0 0;0 -220;0 -220;0 -440;0 -440;0 -660;0 -660;0 -880;0 -880;0 -1100;0 -1100;0 -1320;0 -1320;0 0"
-        keyTimes="0;0.104762;0.142857;0.247619;0.285714;0.390476;0.428571;0.533333;0.571429;0.676190;0.714286;0.819048;0.857143;0.999000;1"
-        keySplines="0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;1 1 1 1" />
+        dur="12s" repeatCount="indefinite" calcMode="spline"
+        values="0 0;0 0;0 -232;0 -220;0 -220;0 -452;0 -440;0 -440;0 -672;0 -660;0 -660;0 -892;0 -880;0 -880;0 -1112;0 -1100;0 -1100;0 -1332;0 -1320;0 -1320;0 -1320;0 0"
+        keyTimes="0;0.1;0.114167;0.141667;0.241667;0.255833;0.283333;0.383333;0.3975;0.425;0.525;0.539167;0.566667;0.666667;0.680833;0.708333;0.808333;0.8225;0.85;0.95;0.999917;1"
+        keySplines="0 0 1 1;0.35 0 0.25 1;0.2 0.8 0.2 1;0 0 1 1;0.35 0 0.25 1;0.2 0.8 0.2 1;0 0 1 1;0.35 0 0.25 1;0.2 0.8 0.2 1;0 0 1 1;0.35 0 0.25 1;0.2 0.8 0.2 1;0 0 1 1;0.35 0 0.25 1;0.2 0.8 0.2 1;0 0 1 1;0.35 0 0.25 1;0.2 0.8 0.2 1;0 0 1 1;0 0 1 1;1 1 1 1" />
     </g>
   </g>
 </svg>
