@@ -1,6 +1,6 @@
 <!-- ====== Color Wave Header ====== -->
 <p align="center">
-  <img src="./neon-rgb.svg" alt="Abdelrahman Mohamed — RGB Neon" />
+  <img src="./kinetic-typography.gif" alt="Abdelrahman Abozena — Agentic AI Engineer" />
 </p>
 
 <p align="center">
