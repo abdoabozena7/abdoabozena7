@@ -13,8 +13,8 @@
     <g id="reel" transform="translate(0 0)"
        font-family="Arial Black, Helvetica Neue, Arial, sans-serif"
        font-weight="900" text-anchor="middle" dominant-baseline="middle"
-       paint-order="stroke fill" stroke="#000000" stroke-width="1.5"
-       stroke-opacity="0.42" stroke-linejoin="round">
+       paint-order="stroke fill" stroke="#000000" stroke-width="2.4"
+       stroke-opacity="0.85" stroke-linejoin="round">
       <text x="600" y="132" font-size="116" fill="#FFFFFF">HEY</text>
       <text x="600" y="352" font-size="76" fill="#FFFFFF">WELCOME TO MY WORK</text>
       <text x="600" y="572" font-size="82" fill="#F9B709" stroke="#F88A08">I'M ABDELRAHMAN</text>
