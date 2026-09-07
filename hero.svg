@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc" overflow="hidden">
+  <title id="title">Abdelrahman Abozena — Agentic AI Engineer</title>
+  <desc id="desc">A lightweight animated introduction to Abdelrahman's work building agentic AI systems.</desc>
+
+  <defs>
+    <!-- This rectangle only defines the viewport; it is never painted. -->
+    <clipPath id="viewport">
+      <rect width="1200" height="220" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#viewport)">
+    <g id="reel" transform="translate(0 0)"
+       font-family="Arial Black, Helvetica Neue, Arial, sans-serif"
+       font-weight="900" text-anchor="middle" dominant-baseline="middle"
+       paint-order="stroke fill" stroke="#000000" stroke-width="1.5"
+       stroke-opacity="0.42" stroke-linejoin="round">
+      <text x="600" y="132" font-size="116" fill="#FFFFFF">HEY</text>
+      <text x="600" y="352" font-size="76" fill="#FFFFFF">WELCOME TO MY WORK</text>
+      <text x="600" y="572" font-size="82" fill="#F9B709" stroke="#F88A08">I'M ABDELRAHMAN</text>
+      <text x="600" y="792" font-size="78" fill="#FFFFFF">AGENTIC AI ENGINEER</text>
+      <text x="600" y="1012" font-size="66" fill="#FFFFFF"><tspan>I BUILD AGENTS THAT </tspan><tspan fill="#F9B709" stroke="#F88A08">REASON</tspan></text>
+      <text x="600" y="1232" font-size="68" fill="#F9B709" stroke="#F88A08">RAG &#x2022; MULTI-AGENT &#x2022; FASTAPI</text>
+      <text x="600" y="1452" font-size="58" fill="#FFFFFF"><tspan>LET'S BUILD SOMETHING </tspan><tspan fill="#F9B709" stroke="#F88A08">REAL</tspan></text>
+
+      <animateTransform attributeName="transform" attributeType="XML" type="translate"
+        dur="10.5s" repeatCount="indefinite" calcMode="spline"
+        values="0 0;0 0;0 -220;0 -220;0 -440;0 -440;0 -660;0 -660;0 -880;0 -880;0 -1100;0 -1100;0 -1320;0 -1320;0 0"
+        keyTimes="0;0.104762;0.142857;0.247619;0.285714;0.390476;0.428571;0.533333;0.571429;0.676190;0.714286;0.819048;0.857143;0.999000;1"
+        keySplines="0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;0.25 0.8 0.25 1;0 0 1 1;1 1 1 1" />
+    </g>
+  </g>
+</svg>
