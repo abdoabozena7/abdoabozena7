@@ -1,6 +1,6 @@
 <!-- ====== Color Wave Header ====== -->
 <p align="center">
-  <img src="./kinetic-typography.gif" alt="Abdelrahman Abozena — Agentic AI Engineer" />
+  <img src="./kinetic-typography.webp" alt="Abdelrahman Abozena — Agentic AI Engineer" />
 </p>
 
 <p align="center">
