@@ -1,53 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220"
-     viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet"
-     role="img" aria-labelledby="title desc" overflow="hidden"
-     font-family="Arial, Helvetica Neue, sans-serif" font-weight="900"
-     text-anchor="middle" dominant-baseline="alphabetic">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc" overflow="hidden" font-family="Arial, Helvetica Neue, sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="alphabetic">
   <title id="title">Abdelrahman Abozena — Making hard things work</title>
-  <desc id="desc">Hard problems. New angles. Deeper context. Build. Test. Make it work. Seven short scenes, a held closing line, then a 2.5-second transparent pause before the 18-second loop restarts.</desc>
-
+  <desc id="desc">Original reference motion, edited to a shorter introduction about solving hard problems. Final word holds for three seconds, followed by a 2.5-second transparent break. 20.25-second loop.</desc>
+  <!-- Motion source: a2a80f8, original 24 fps reference adaptation.
+       Retained source-frame ranges: 0-155, 176-244, 282-362, 523-549, 567-582, 606-616.
+       Source scale/position curves are copied, not redesigned. Heart, horizontal stretch and technology burst are omitted. -->
   <defs>
-    <linearGradient id="ink">
-      <stop stop-color="#238636" />
-      <stop offset="1" stop-color="#3FB950" />
-    </linearGradient>
-    <!-- Static crop only: no painted background, animated masks or stretched text. -->
-    <clipPath id="frame"><rect width="1200" height="220" /></clipPath>
-
-    <text id="name" x="0" y="39.5" font-size="110" fill="url(#ink)" stroke="none">ABDELRAHMAN</text>
-    <text id="hard" x="0" y="33" font-size="92">HARD <tspan fill="#3FB950">PROBLEMS.</tspan></text>
-    <text id="angles" x="0" y="36.5" font-size="102">NEW <tspan fill="#3FB950">ANGLES.</tspan></text>
-    <text id="context" x="0" y="31.5" font-size="88">DEEPER <tspan fill="#3FB950">CONTEXT.</tspan></text>
-    <text id="build" x="0" y="54" font-size="150" fill="#3FB950">BUILD.</text>
-    <text id="test" x="0" y="54" font-size="150">TEST.</text>
-    <text id="finish" x="0" y="37.5" font-size="104">MAKE IT <tspan fill="#3FB950">WORK.</tspan></text>
-    <!-- Selecting this empty group creates a real, fully transparent loop break. -->
-    <g id="rest" />
+    <linearGradient id="ink"><stop stop-color="#238636"/><stop offset="1" stop-color="#3FB950"/></linearGradient>
+    <clipPath id="frame"><rect width="1200" height="220"/></clipPath>
+    <clipPath id="reveal"><rect x="-600" y="-440" width="1200" height="880"><animate attributeName="width" dur="20.25s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.063786;0.072016;0.076132;0.082305;0.113169;0.240741;0.244856;0.26749;0.318928;0.31893;0.36214;0.364198;0.366255;0.368313;0.37037;0.372428;0.374486;0.376543;0.378601;0.425926;0.434156;0.444444;0.458848;0.623455;0.623457;0.676953;0.676955;0.707817;0.707819;0.728393;1" values="1200;454.078125;656.806640625;741.267578125;956.576171875;1200;477.771484375;942.625;1200;1200;1200;620;692.5;765;837.5;910;982.5;1055;1127.5;1200;389.880859375;693.947265625;1152.244140625;1200;1200;1200;1200;1200;1200;1200;1200;1200"/></rect></clipPath>
+    <text id="hey" x="0" y="36" font-size="100">IMPOSSIBLE?</text>
+    <text id="welcome" x="0" y="19" font-size="76">Let's Find A Way.</text>
+    <text id="im" x="0" y="34.5" font-size="96">I'm</text>
+    <text id="name" x="0" y="39.5" font-size="110" fill="url(#ink)">ABDELRAHMAN</text>
+    <text id="an" x="0" y="34.5" font-size="96">I</text>
+    <text id="agentic" x="0" y="31.5" font-size="90">solve</text>
+    <text id="ai" x="0" y="32.5" font-size="92">hard</text>
+    <text id="ai-engineer" x="0" y="22.5" font-size="86">hard problems</text>
+    <text id="role" x="0" y="20" font-size="78" fill="url(#ink)">No ready-made answers.</text>
+    <text id="agents" x="0" y="24.5" font-size="96">New angles.</text>
+    <text id="reason-phrase" x="0" y="31" font-size="88">Real <tspan fill="#3FB950">solutions.</tspan></text>
+    <text id="through" x="0" y="31.5" font-size="90">More</text>
+    <text id="multi" x="0" y="19" font-size="72">Context. Deeper Reasoning.</text>
+    <text id="local" x="0" y="28" font-size="86">Question</text>
+    <text id="and" x="0" y="32.5" font-size="92">the</text>
+    <text id="evidence" x="0" y="28" font-size="80">obvious.</text>
+    <text id="rethink" x="0" y="34" font-size="96">Rethink.</text>
+    <text id="to" x="0" y="32.5" font-size="92">then</text>
+    <text id="scale" x="0" y="31" font-size="88">BUILD</text>
+    <text id="your" x="0" y="32.5" font-size="92">what</text>
+    <text id="systems" x="0" y="31" font-size="88">works.</text>
+    <text id="start" x="0" y="23.5" font-size="94">Bring</text>
+    <text id="now" x="0" y="24.5" font-size="94">me</text>
+    <text id="lets" x="0" y="15" font-size="94">your</text>
+    <text id="project" x="0" y="29" font-size="82">hardest</text>
+    <text id="working" x="0" y="21.5" font-size="84">problem.</text>
+    <g id="rest"/>
   </defs>
-
-  <g clip-path="url(#frame)" fill="#FFFFFF" stroke="#238636"
-     stroke-width="3.2" stroke-linejoin="round" paint-order="stroke fill">
+  <g clip-path="url(#frame)" fill="#000000" stroke="#2EA043" stroke-width="3.2" paint-order="stroke fill" stroke-linejoin="round">
+    <animate attributeName="fill" dur="20.25s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.020576;0.034979;0.113169;0.187243;0.26749;0.318928;0.31893;0.40535;0.458846;0.458848;0.545267;0.623455;0.623457;0.676953;0.676955;0.707817;0.707819;0.728393;1" values="#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#FFFFFF;#000000;#FFFFFF;#FFFFFF;#FFFFFF;#000000;#000000;#000000;#000000;#000000;#000000;#FFFFFF;#FFFFFF;#FFFFFF"/>
     <g transform="translate(600 110)">
-      <!-- All scenes share these two short motion tracks. Scale is uniform only. -->
-      <g id="motion-position">
-        <animateTransform attributeName="transform" type="translate" dur="18s" repeatCount="indefinite"
-            calcMode="spline" keyTimes="0;0.133278;0.133333;0.148889;0.258278;0.258333;0.275556;0.508278;0.508333;0.522222;0.588833;0.588889;0.605;1"
-            values="0 0;0 0;0 24;0 0;0 0;-70 0;0 0;0 0;0 14;0 0;0 0;65 0;0 0;0 0"
-            keySplines="0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1" />
-        <g id="motion-scale">
-          <animateTransform attributeName="transform" type="scale" dur="18s" repeatCount="indefinite"
-            calcMode="spline" keyTimes="0;0.016667;0.133278;0.133333;0.148889;0.374944;0.375;0.394444;0.508278;0.508333;0.523889;0.669389;0.669444;0.687778;1"
-            values="1.12;1;1;0.96;1;1;1.12;1;1;1.18;1;1;0.92;1;1"
-            keySplines="0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1;0 0 1 1;0.16 1 0.3 1;0 0 1 1" />
-          <use href="#name">
-            <!-- 12.05-15.50: closing line; fully settled from 12.38.
-                 15.50-18.00: blank pause. Reset transforms while no text is visible. -->
-            <animate attributeName="href" dur="18s" repeatCount="indefinite"
-              calcMode="discrete" keyTimes="0;0.133333;0.258333;0.375;0.508333;0.588889;0.669444;0.861111;1"
-              values="#name;#hard;#angles;#context;#build;#test;#finish;#rest;#name" />
-          </use>
+      <g id="motion-position"><animateTransform attributeName="transform" type="translate" dur="20.25s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.063784;0.063786;0.072016;0.144033;0.146091;0.148148;0.150206;0.152261;0.152263;0.230451;0.230453;0.238683;0.240739;0.240741;0.251029;0.300412;0.304527;0.306584;0.308642;0.3107;0.318928;0.31893;0.425924;0.425926;0.434156;0.458846;0.458848;0.623455;0.623457;0.676953;0.676955;0.707817;0.707819;0.728393;1" values="0 0;0 0;0 25;0 0;0 0;31.67 -22.67;63.33 -45.33;95 -68;95 -68;0 0;0 0;0 25;0 0;0 0;0 15;0 0;0 0;0 25;0 90;0 180;0 260;0 260;0 0;0 0;0 18;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0;0 0"/>
+        <g id="motion-scale"><animateTransform attributeName="transform" type="scale" dur="20.25s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.002058;0.004115;0.006173;0.010288;0.018519;0.113167;0.113169;0.115226;0.117284;0.119342;0.125514;0.12963;0.131687;0.135802;0.13786;0.141975;0.144033;0.146091;0.148148;0.150206;0.152261;0.152263;0.156379;0.162551;0.17284;0.187241;0.187243;0.1893;0.191358;0.195473;0.201646;0.203704;0.209877;0.213992;0.216049;0.218107;0.226337;0.228395;0.230451;0.230453;0.267488;0.26749;0.288066;0.318928;0.31893;0.320988;0.325103;0.331276;0.362138;0.36214;0.37037;0.380658;0.405348;0.40535;0.419753;0.421811;0.425924;0.425926;0.458846;0.458848;0.460905;0.467078;0.469136;0.473251;0.475309;0.481479;0.481481;0.495883;0.495885;0.5;0.502058;0.50823;0.516459;0.516461;0.530862;0.530864;0.545265;0.545267;0.547325;0.549383;0.586418;0.58642;0.604936;0.604938;0.623455;0.623457;0.625514;0.627572;0.62963;0.633745;0.635802;0.639918;0.644031;0.644033;0.646091;0.648148;0.652263;0.654321;0.660494;0.664607;0.664609;0.676953;0.676955;0.679012;0.68107;0.701646;0.703704;0.707817;0.707819;0.709877;0.711934;0.713992;0.716049;0.728393;1" values="4.7 4.7;2.25 2.25;1.86 1.86;1.58 1.58;1.18 1.18;1 1;1 1;1.133 1.133;1.067 1.067;0.933 0.933;0.833 0.833;0.733 0.733;0.733 0.733;0.7 0.7;0.7 0.7;0.733 0.733;0.667 0.667;1 1;0.7 0.7;0.52 0.52;0.45 0.45;0.45 0.45;1.32 1.32;1.16 1.16;1.03 1.03;1 1;1 1;1.167 1.167;1.1 1.1;0.967 0.967;0.833 0.833;0.833 0.833;0.767 0.767;0.767 0.767;0.633 0.633;0.633 0.633;0.567 0.567;0.567 0.567;0.52 0.52;0.52 0.52;1 1;1 1;1.08 1;1 1;1 1;0.65 0.65;0.8 0.8;1.2 1.2;1.3 1.3;1.3 1.3;1.35 1.35;1.2 1.2;1 1;1 1;1.033 1.033;1.033 1.033;0.52 0.52;0.52 0.52;1 1;1 1;0.633 0.633;1.567 1.567;1.167 1.167;1.1 1.1;1.1 1.1;1.033 1.033;1.033 1.033;0.8 0.8;0.8 0.8;1.2 1.2;1 1;0.933 0.933;0.833 0.833;0.833 0.833;0.8 0.8;0.8 0.8;0.733 0.733;0.733 0.733;0.833 0.833;1.967 1.967;2.4 2.4;2.4 2.4;0.8 0.8;0.8 0.8;0.833 0.833;0.833 0.833;2.85 2.85;2.367 2.367;1.833 1.833;1.5 1.5;1.1 1.1;0.967 0.967;0.833 0.833;0.833 0.833;2.7 2.7;1.767 1.767;1.367 1.367;0.967 0.967;0.833 0.833;0.633 0.633;0.633 0.633;0.833 0.833;0.833 0.833;1.067 1.067;2.067 2.067;2.4 2.4;2.4 2.4;0.52 0.52;0.52 0.52;1.033 1.033;1.767 1.767;2.1 2.1;2.3 2.3;2.4 2.4;2.4 2.4;2.4 2.4"/>
+          <g clip-path="url(#reveal)">
+            <use href="#hey">
+              <animate attributeName="href" dur="20.25s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.063786;0.113169;0.152263;0.187243;0.207819;0.230453;0.240741;0.26749;0.31893;0.36214;0.40535;0.425926;0.458848;0.481481;0.495885;0.516461;0.530864;0.545267;0.58642;0.604938;0.623457;0.644033;0.664609;0.676955;0.707819;0.876543;1" values="#hey;#welcome;#im;#name;#an;#agentic;#ai;#ai-engineer;#role;#agents;#reason-phrase;#through;#multi;#local;#and;#evidence;#rethink;#to;#scale;#your;#systems;#start;#now;#lets;#project;#working;#rest;#hey"/>
+              <animate attributeName="opacity" dur="20.25s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.063784;0.063786;0.072016;0.082305;0.092593;0.230451;0.230453;0.238683;0.240739;0.240741;0.253086;0.318928;0.31893;0.425924;0.425926;0.438272;0.44856;0.458846;0.458848;0.623455;0.623457;0.676953;0.676955;0.707817;0.707819;0.728393;1" values="1;1;0.25;0.65;0.9;1;1;0.25;1;1;0.6;1;1;1;1;0.3;0.8;1;1;1;1;1;1;1;1;1;1;1"/>
+            </use>
+          </g>
         </g>
       </g>
     </g>
   </g>
+  <!-- Active footage: 0-14.75s. Last pose held: 14.75-17.75s. Empty break: 17.75-20.25s. -->
 </svg>
