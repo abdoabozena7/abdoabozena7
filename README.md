@@ -1,6 +1,6 @@
 <!-- ====== Color Wave Header ====== -->
 <p align="center">
-  <img src="./hero.svg" alt="Abdelrahman Abozena — Agentic AI Engineer" width="100%" />
+  <img src="./hero.svg" alt="Abdelrahman Abozena — Making hard things work" width="100%" />
 </p>
 
 <p align="center">

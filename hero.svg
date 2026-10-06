@@ -1,68 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc" overflow="hidden" font-family="Arial, Helvetica Neue, sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="alphabetic">
-  <title id="title">Abdelrahman Abozena — Agentic AI Engineer</title>
+  <title id="title">Abdelrahman Abozena — Making hard things work</title>
   <desc id="desc">Kinetic introduction timed to the supplied reference's typography section: 637 frames at 24 fps. Transparent adaptation with profile copy; the reference's promotional outro is excluded.</desc>
   <!-- Only the selected definition is rendered. Shared tracks control cuts, scale, position, ink and reveal. -->
   <defs>
-    <linearGradient id="ink"><stop stop-color="#F88A08"/><stop offset="1" stop-color="#F9B709"/></linearGradient>
+    <linearGradient id="ink"><stop stop-color="#238636"/><stop offset="1" stop-color="#3FB950"/></linearGradient>
     <clipPath id="frame"><rect width="1200" height="220"/></clipPath>
-    <clipPath id="reveal"><rect x="-600" y="-440" width="1200" height="880"><animate attributeName="width" dur="26.541667s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.048666;0.054945;0.058085;0.062794;0.086342;0.183673;0.186813;0.204082;0.243328;0.248038;0.252747;0.276295;0.309262;0.310832;0.312402;0.313972;0.315542;0.317111;0.318681;0.320251;0.321821;0.357928;0.364207;0.383046;0.384615;0.386185;0.387755;0.389325;0.390895;0.392465;0.394035;0.395604;1" values="1200;560.76;686.52;830.02;1041.7;1200;456.16;871.88;1200;379.26;496.73;886.79;1200;620;692.5;765;837.5;910;982.5;1055;1127.5;1200;676.34;1040.24;300;412.5;525;637.5;750;862.5;975;1087.5;1200;1200"/></rect></clipPath>
+    <clipPath id="reveal"><rect x="-600" y="-440" width="1200" height="880"><animate attributeName="width" dur="26.541667s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.048666;0.054945;0.058085;0.062794;0.086342;0.183673;0.186813;0.204082;0.243328;0.248038;0.252747;0.276295;0.309262;0.310832;0.312402;0.313972;0.315542;0.317111;0.318681;0.320251;0.321821;0.357928;0.364207;0.372057;0.383046;0.384615;0.386185;0.387755;0.389325;0.390895;0.392465;0.394035;0.395604;1" values="1200;428.18;512.65;717.82;945.9;1200;575.32;866.76;1200;399.3;516.77;866.75;1200;620;692.5;765;837.5;910;982.5;1055;1127.5;1200;506.66;695.15;1035.45;300;412.5;525;637.5;750;862.5;975;1087.5;1200;1200"/></rect></clipPath>
     <text id="hey" x="0" y="25.5" font-size="100">Hey</text>
-    <text id="welcome" x="0" y="19" font-size="76">Welcome To My Work</text>
+    <text id="welcome" x="0" y="27" font-size="76">Got A Wild Idea?</text>
     <text id="im" x="0" y="34.5" font-size="96">I'm</text>
     <text id="name" x="0" y="39.5" font-size="110" fill="url(#ink)">ABDELRAHMAN</text>
-    <text id="an" x="0" y="34.5" font-size="96">An</text>
-    <text id="agentic" x="0" y="22.5" font-size="90">Agentic</text>
-    <text id="ai" x="0" y="33" font-size="92">AI</text>
-    <text id="ai-engineer" x="0" y="22" font-size="86">AI Engineer</text>
-    <text id="role" x="0" y="20" font-size="78" fill="url(#ink)">Agentic AI Engineer</text>
-    <text id="love" x="0" y="25" font-size="90">I <tspan fill="#F88A08">&#x2764;</tspan> building</text>
-    <text id="agents" x="0" y="24.5" font-size="96">Agents</text>
-    <text id="reason-phrase" x="0" y="22.5" font-size="88">Agents that <tspan fill="#F9B709">reason</tspan></text>
-    <text id="through" x="0" y="22.5" font-size="90">Through</text>
-    <text id="multi" x="0" y="20.5" font-size="78">Multi-Agent Systems</text>
-    <text id="orchestration" x="0" y="30.5" font-size="86">orchestration</text>
-    <text id="local" x="0" y="30.5" font-size="86">Local-First</text>
-    <text id="and" x="0" y="32.5" font-size="92">and</text>
-    <text id="evidence" x="0" y="28" font-size="80">Evidence-Driven</text>
+    <text id="an" x="0" y="34.5" font-size="96">I</text>
+    <text id="agentic" x="0" y="31.5" font-size="90">make</text>
+    <text id="ai" x="0" y="32.5" font-size="92">hard</text>
+    <text id="ai-engineer" x="0" y="22" font-size="86">hard things</text>
+    <text id="role" x="0" y="42" font-size="118" fill="url(#ink)">WORK.</text>
+    <text id="love" x="0" y="25" font-size="90">I <tspan fill="#3FB950">&#x2764;</tspan> solving</text>
+    <text id="agents" x="0" y="21" font-size="82">tough problems</text>
+    <text id="reason-phrase" x="0" y="19" font-size="72">No playbook? <tspan fill="#3FB950">No problem.</tspan></text>
+    <text id="through" x="0" y="32" font-size="90">Think</text>
+    <text id="multi" x="0" y="20.5" font-size="78">Beyond The Obvious</text>
+    <text id="orchestration" x="0" y="22.5" font-size="86">possibilities</text>
+    <text id="local" x="0" y="30.5" font-size="86">More context</text>
+    <text id="and" x="0" y="24" font-size="92">deeper</text>
+    <text id="evidence" x="0" y="20" font-size="80">reasoning</text>
     <text id="to" x="0" y="32.5" font-size="92">to</text>
-    <text id="scale" x="0" y="31.5" font-size="88">Scale</text>
+    <text id="scale" x="0" y="23" font-size="88">push</text>
     <text id="your" x="0" y="15" font-size="92">your</text>
-    <text id="systems" x="0" y="22.5" font-size="88">systems</text>
+    <text id="systems" x="0" y="31" font-size="88">limits</text>
     <text id="dont" x="0" y="33" font-size="94">Don't</text>
     <text id="blink" x="0" y="33.5" font-size="94">Blink<animate attributeName="letter-spacing" dur="26.541667s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.583987;0.594976;0.598116;0.602826;0.610675;0.618524;0.620094;1" values="0;0;0;6;16;16;16;0;0"/></text>
-    <text id="python" x="0" y="23.5" font-size="94">Python</text>
-    <text id="fastapi" x="0" y="33" font-size="94">FastAPI</text>
-    <text id="kafka" x="0" y="33.5" font-size="94">Kafka</text>
-    <text id="ollama" x="0" y="33.5" font-size="94">Ollama</text>
-    <text id="build" x="0" y="33" font-size="94">Build</text>
+    <text id="python" x="0" y="33" font-size="94">Rethink</text>
+    <text id="fastapi" x="0" y="33.5" font-size="94">Connect</text>
+    <text id="kafka" x="0" y="23" font-size="90">Experiment</text>
+    <text id="ollama" x="0" y="33.5" font-size="94">Solve</text>
+    <text id="build" x="0" y="33" font-size="94">Dream</text>
     <text id="bigger" x="0" y="22" font-size="86">bigger</text>
-    <text id="rag" x="0" y="33.5" font-size="94">RAG</text>
-    <text id="reason" x="0" y="23.5" font-size="90">reason</text>
+    <text id="rag" x="0" y="15" font-size="94">go</text>
+    <text id="reason" x="0" y="31.5" font-size="90">obvious</text>
     <text id="stop" x="0" y="24" font-size="94">stop</text>
-    <text id="guessing" x="0" y="23.5" font-size="92">guessing</text>
+    <text id="guessing" x="0" y="23.5" font-size="92">settling</text>
     <text id="start" x="0" y="33" font-size="94">start</text>
-    <text id="shipping" x="0" y="21" font-size="82">shipping</text>
-    <text id="real" x="0" y="33" font-size="94">real</text>
+    <text id="shipping" x="0" y="21" font-size="82">building</text>
+    <text id="real" x="0" y="33" font-size="94">what's</text>
     <text id="question" x="0" y="35" font-size="96">?</text>
     <text id="now" x="0" y="24.5" font-size="94">now</text>
     <text id="lets" x="0" y="33" font-size="94">Let's</text>
     <text id="talk" x="0" y="33" font-size="94">talk</text>
     <text id="about" x="0" y="33" font-size="94">about</text>
-    <text id="project" x="0" y="21" font-size="82">project</text>
+    <text id="project" x="0" y="29" font-size="82">moonshot</text>
     <text id="just" x="0" y="23.5" font-size="94">just</text>
     <text id="message" x="0" y="14.5" font-size="90">message</text>
     <text id="me" x="0" y="24.5" font-size="94">me</text>
-    <text id="working" x="0" y="21" font-size="84">Working</text>
-    <text id="on" x="0" y="24.5" font-size="94">on</text>
+    <text id="on" x="0" y="23.5" font-size="94">beyond</text>
+    <text id="built" x="0" y="33" font-size="94">built</text>
+    <text id="the" x="0" y="33" font-size="94">the</text>
+    <text id="next" x="0" y="31" font-size="88">next</text>
   </defs>
-  <g clip-path="url(#frame)" fill="#000000" stroke="#F88A08" stroke-width="3.2" paint-order="stroke fill" stroke-linejoin="round">
+  <g clip-path="url(#frame)" fill="#000000" stroke="#2EA043" stroke-width="3.2" paint-order="stroke fill" stroke-linejoin="round">
     <animate attributeName="fill" dur="26.541667s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.015699;0.026688;0.086342;0.142857;0.204082;0.276295;0.342229;0.508634;0.568289;0.620094;0.654631;0.686028;0.756672;0.821036;0.951334;1" values="#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#000000;#FFFFFF;#000000"/>
     <g transform="translate(600 110)">
       <g id="motion-position"><animateTransform attributeName="transform" type="translate" dur="26.541667s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.048664;0.048666;0.054945;0.10989;0.11146;0.11303;0.1146;0.116168;0.11617;0.175823;0.175824;0.182104;0.183672;0.183673;0.191523;0.229199;0.232339;0.233909;0.235479;0.237049;0.243327;0.243328;0.357926;0.357928;0.364207;0.383044;0.383046;0.390895;0.392465;0.394035;0.395604;0.397174;0.398744;0.400314;0.401884;0.403454;0.405024;0.406593;0.408163;0.409733;0.411303;0.412873;0.414443;0.416013;0.417582;0.419152;0.420722;0.422292;0.423862;0.425432;0.427002;0.428571;0.430141;0.431711;0.433281;0.434851;0.436421;0.437991;0.43956;0.44113;0.442699;0.4427;1" values="0 0;0 0;0 25;0 0;0 0;31.67 -22.67;63.33 -45.33;95 -68;95 -68;0 0;0 0;0 25;0 0;0 0;0 15;0 0;0 0;0 25;0 90;0 180;0 260;0 260;0 0;0 0;0 18;0 0;0 0;0 25;0 0;0 -1.33;0 -2.67;0 -4;-15.38 -5.33;-30.77 -6.67;-46.15 -8;-61.54 -6.2;-76.92 -4.4;-92.31 -2.6;-107.69 -0.8;-123.08 1;-138.46 2.8;-153.85 4.6;-169.23 6.4;-184.62 8.2;-200 10;-234.38 9.38;-268.75 8.75;-303.13 8.13;-337.5 7.5;-371.88 6.88;-406.25 6.25;-440.63 5.63;-475 5;-509.38 4.38;-543.75 3.75;-578.13 3.13;-612.5 2.5;-646.88 1.88;-681.25 1.25;-715.63 0.63;-750 0;-750 0;0 0;0 0"/>
         <g id="motion-scale"><animateTransform attributeName="transform" type="scale" dur="26.541667s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.00157;0.00314;0.00471;0.007849;0.014129;0.086341;0.086342;0.087912;0.089482;0.091052;0.095761;0.098901;0.100471;0.103611;0.105181;0.10832;0.10989;0.11146;0.11303;0.1146;0.116168;0.11617;0.119309;0.124019;0.131868;0.142856;0.142857;0.144427;0.145997;0.149137;0.153846;0.155416;0.160126;0.163265;0.164835;0.166405;0.172684;0.174254;0.175823;0.175824;0.20408;0.204082;0.21978;0.276294;0.276295;0.277865;0.281005;0.285714;0.309261;0.309262;0.315542;0.323391;0.342228;0.342229;0.353218;0.354788;0.357926;0.357928;0.395604;0.408163;0.423862;0.44113;0.442699;0.4427;0.44427;0.44898;0.450549;0.453689;0.455259;0.459967;0.459969;0.470956;0.470958;0.474097;0.475667;0.480377;0.486655;0.486656;0.497644;0.497645;0.508633;0.508634;0.510204;0.511774;0.54003;0.540031;0.554159;0.55416;0.568287;0.568289;0.569859;0.572998;0.574568;0.576138;0.577708;0.588697;0.590267;0.593407;0.594976;0.620093;0.620094;0.623234;0.624804;0.626374;0.627943;0.631082;0.631083;0.638931;0.638932;0.64678;0.646782;0.65463;0.654631;0.670328;0.67033;0.6719;0.673469;0.686027;0.686028;0.687598;0.689168;0.690738;0.692308;0.693878;0.695447;0.698587;0.700157;0.701725;0.701727;0.723703;0.723705;0.734692;0.734694;0.745681;0.745683;0.75667;0.756672;0.767659;0.767661;0.769231;0.770801;0.783358;0.783359;0.794347;0.794349;0.805336;0.805338;0.806907;0.821035;0.821036;0.822606;0.824176;0.825746;0.828885;0.830455;0.833595;0.836733;0.836735;0.838305;0.839874;0.843014;0.844584;0.849294;0.852432;0.852433;0.861851;0.861852;0.880689;0.880691;0.890108;0.89011;0.89168;0.89325;0.908948;0.910518;0.913656;0.913658;0.923075;0.923077;0.932495;0.932496;0.951333;0.951334;0.952904;0.954474;0.956044;0.957614;0.967031;0.967033;0.97802;0.978022;0.989009;0.989011;0.999998;1" values="4.7 4.7;2.25 2.25;1.86 1.86;1.58 1.58;1.18 1.18;1 1;1 1;1.133 1.133;1.067 1.067;0.933 0.933;0.833 0.833;0.733 0.733;0.733 0.733;0.7 0.7;0.7 0.7;0.733 0.733;0.667 0.667;1 1;0.7 0.7;0.52 0.52;0.45 0.45;0.45 0.45;1.32 1.32;1.16 1.16;1.03 1.03;1 1;1 1;1.167 1.167;1.1 1.1;0.967 0.967;0.833 0.833;0.833 0.833;0.767 0.767;0.767 0.767;0.633 0.633;0.633 0.633;0.567 0.567;0.567 0.567;0.52 0.52;0.52 0.52;1 1;1 1;1.08 1;1 1;1 1;0.65 0.65;0.8 0.8;1.2 1.2;1.3 1.3;1.3 1.3;1.35 1.35;1.2 1.2;1 1;1 1;1.033 1.033;1.033 1.033;0.52 0.52;0.52 0.52;1 1;1 1;1.6 1;2.6 1;4.8 1;4.8 1;0.633 0.633;1.567 1.567;1.167 1.167;1.1 1.1;1.1 1.1;1.033 1.033;1.033 1.033;0.8 0.8;0.8 0.8;1.2 1.2;1 1;0.933 0.933;0.833 0.833;0.833 0.833;0.8 0.8;0.8 0.8;0.733 0.733;0.733 0.733;0.833 0.833;1.967 1.967;2.4 2.4;2.4 2.4;0.8 0.8;0.8 0.8;0.833 0.833;0.833 0.833;1.433 1.433;1.233 1.233;0.967 0.967;0.9 0.9;0.9 0.9;0.833 0.833;0.833 0.833;0.52 0.52;0.52 0.52;0.833 0.833;0.833 0.833;1.133 1.133;0.933 0.933;0.867 0.867;0.867 0.867;0.8 0.8;0.8 0.8;0.633 0.633;0.633 0.633;0.833 0.833;0.833 0.833;1 1;1 1;0.767 0.767;0.767 0.767;1.067 1.067;2.267 2.267;2.4 2.4;2.4 2.4;2.85 2.85;2.4 2.4;1.967 1.967;1.667 1.667;1.467 1.467;1.3 1.3;1.2 1.2;1.067 1.067;1.033 1.033;1.033 1.033;0.767 0.767;0.767 0.767;1.033 1.033;1.033 1.033;0.933 0.933;0.933 0.933;1.067 1.067;1.067 1.067;0.733 0.733;0.733 0.733;1.067 1.067;2.133 2.133;2.4 2.4;2.4 2.4;0.767 0.767;0.767 0.767;0.967 0.967;0.967 0.967;0.8 0.8;2.4 2.4;2.4 2.4;2.85 2.85;2.367 2.367;1.833 1.833;1.5 1.5;1.1 1.1;0.967 0.967;0.833 0.833;0.833 0.833;2.7 2.7;1.767 1.767;1.367 1.367;0.967 0.967;0.833 0.833;0.633 0.633;0.633 0.633;0.833 0.833;0.833 0.833;0.8 0.8;0.8 0.8;0.833 0.833;0.833 0.833;1.067 1.067;2.067 2.067;2.4 2.4;2.4 2.4;0.52 0.52;0.52 0.52;1.033 1.033;1.033 1.033;0.833 0.833;0.833 0.833;0.733 0.733;0.733 0.733;1.033 1.033;1.767 1.767;2.1 2.1;2.3 2.3;2.4 2.4;2.4 2.4;1.533 1.533;1.533 1.533;2.067 2.067;2.067 2.067;2.4 2.4;2.4 2.4;4.7 4.7"/>
           <g clip-path="url(#reveal)">
             <use href="#hey">
-              <animate attributeName="href" dur="26.541667s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.048666;0.086342;0.11617;0.142857;0.158556;0.175824;0.183673;0.204082;0.243328;0.276295;0.309262;0.342229;0.357928;0.383046;0.4427;0.459969;0.470958;0.486656;0.497645;0.508634;0.540031;0.55416;0.568289;0.583987;0.620094;0.631083;0.638932;0.646782;0.654631;0.67033;0.686028;0.701727;0.712716;0.723705;0.734694;0.745683;0.756672;0.767661;0.783359;0.794349;0.805338;0.821036;0.836735;0.852433;0.861852;0.871272;0.880691;0.89011;0.913658;0.923077;0.932496;0.941915;0.951334;0.967033;0.978022;0.989011;1" values="#hey;#welcome;#im;#name;#an;#agentic;#ai;#ai-engineer;#role;#love;#agents;#reason-phrase;#through;#multi;#orchestration;#local;#and;#evidence;#agents;#to;#scale;#your;#systems;#dont;#blink;#python;#fastapi;#kafka;#ollama;#build;#bigger;#rag;#and;#agents;#reason;#stop;#guessing;#start;#shipping;#real;#systems;#question;#start;#now;#lets;#talk;#about;#your;#project;#just;#message;#me;#start;#working;#on;#your;#project;#hey"/>
+              <animate attributeName="href" dur="26.541667s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.048666;0.086342;0.11617;0.142857;0.158556;0.175824;0.183673;0.204082;0.243328;0.276295;0.309262;0.342229;0.357928;0.383046;0.4427;0.459969;0.470958;0.486656;0.497645;0.508634;0.540031;0.55416;0.568289;0.583987;0.620094;0.631083;0.638932;0.646782;0.654631;0.67033;0.686028;0.701727;0.712716;0.723705;0.734694;0.745683;0.756672;0.767661;0.783359;0.794349;0.805338;0.821036;0.836735;0.852433;0.861852;0.871272;0.880691;0.89011;0.913658;0.923077;0.932496;0.941915;0.951334;0.967033;0.978022;0.989011;1" values="#hey;#welcome;#im;#name;#an;#agentic;#ai;#ai-engineer;#role;#love;#agents;#reason-phrase;#through;#multi;#orchestration;#local;#and;#evidence;#built;#to;#scale;#your;#systems;#dont;#blink;#python;#fastapi;#kafka;#ollama;#build;#bigger;#rag;#on;#the;#reason;#stop;#guessing;#start;#shipping;#real;#next;#question;#start;#now;#lets;#talk;#about;#your;#project;#just;#message;#me;#start;#shipping;#on;#your;#systems;#hey"/>
               <animate attributeName="opacity" dur="26.541667s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.048664;0.048666;0.054945;0.062794;0.070644;0.175823;0.175824;0.182104;0.183672;0.183673;0.193093;0.243328;0.252747;0.265306;0.357926;0.357928;0.367347;0.375196;1" values="1;1;0.25;0.65;0.9;1;1;0.25;1;1;0.6;1;1;0.55;1;1;0.3;0.8;1;1"/>
             </use>
           </g>
@@ -70,5 +72,5 @@
       </g>
     </g>
   </g>
-  <!-- Source edit frames: 0:hey 31:welcome 55:im 74:name 91:an 101:agentic 112:ai 117:ai-engineer 130:role 155:love 176:agents 197:reason-phrase 218:through 228:multi 244:orchestration 282:local 293:and 300:evidence 310:agents 317:to 324:scale 344:your 353:systems 362:dont 372:blink 395:python 402:fastapi 407:kafka 412:ollama 417:build 427:bigger 437:rag 447:and 454:agents 461:reason 468:stop 475:guessing 482:start 489:shipping 499:real 506:systems 513:question 523:start 533:now 543:lets 549:talk 555:about 561:your 567:project 582:just 588:message 594:me 600:start 606:working 616:on 623:your 630:project. All times are relative to image load. -->
+  <!-- Source edit frames: 0:hey 31:welcome 55:im 74:name 91:an 101:agentic 112:ai 117:ai-engineer 130:role 155:love 176:agents 197:reason-phrase 218:through 228:multi 244:orchestration 282:local 293:and 300:evidence 310:built 317:to 324:scale 344:your 353:systems 362:dont 372:blink 395:python 402:fastapi 407:kafka 412:ollama 417:build 427:bigger 437:rag 447:on 454:the 461:reason 468:stop 475:guessing 482:start 489:shipping 499:real 506:next 513:question 523:start 533:now 543:lets 549:talk 555:about 561:your 567:project 582:just 588:message 594:me 600:start 606:shipping 616:on 623:your 630:systems. All times are relative to image load. -->
 </svg>
